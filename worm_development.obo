@@ -5,7 +5,7 @@ auto-generated-by: DAG-Edit 1.419 rev 3
 default-namespace: worm_development
 remark: Version: 1.04
 remark: Date: 01/25/08
-remark: Editors: Wen J. Chen, WormBase, Caltech
+remark: Editors: Wen J. Chen & Daniela Raciti WormBase, Caltech
 remark: This DAG flat files is created for Lifestage system used in WormBase
 
 [Term]
@@ -78,7 +78,7 @@ is_a: WBls:0000005 ! blastula embryo
 id: WBls:0000009
 name: 28-cell embryo
 def: "100-105min after first cleaveage at 20 Centigrade. Contains 28 cells." [wb:wjc]
-is_a: WBls:0000005 ! blastula embryo
+is_a: WBls:0000010 ! gastrulating embryo
 
 [Term]
 id: WBls:0000010
@@ -102,7 +102,7 @@ is_a: WBls:0000010 ! gastrulating embryo
 id: WBls:0000013
 name: enclosing embryo
 def: "290-350min after first cleavage at 20 Centigrade. Proliferate from 421 cells to 560 cells. The stage when embryo just finished gastulation and is enclosing." [wb:wjc]
-is_a: WBls:0000004 ! proliferating embryo
+is_a: WBls:0000014 ! late cleavage embryo
 
 [Term]
 id: WBls:0000014
