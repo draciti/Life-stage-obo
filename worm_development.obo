@@ -5,7 +5,8 @@ auto-generated-by: DAG-Edit 1.419 rev 3
 default-namespace: worm_development
 remark: Version: 1.04
 remark: Date: 01/25/08
-remark: Editors: Wen J. Chen & Daniela Raciti WormBase, Caltech
+remark: Update: 12/21/11
+remark: Editors: Wen J. Chen & Daniela Raciti, WormBase, Caltech
 remark: This DAG flat files is created for Lifestage system used in WormBase
 
 [Term]
