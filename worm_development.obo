@@ -62,14 +62,14 @@ is_a: WBls:0000005 ! blastula embryo
 
 
 [Term]
-id: WBls:00000071
+id: WBls:0000071
 name: 8-cell embryo
 def: "~50 min after first cleavage at 20 Centigrade.  Contains 8 cells." [wb:wjc]
 is_a: WBls:0000005 ! blastula embryo
 
 
 [Term]
-id: WBls:00000072
+id: WBls:0000072
 name: 12-cell embryo
 def: "~55 min after first cleavage at 20 Centigrade.  Contains 12 cells." [wb:wjc]
 is_a: WBls:0000005 ! blastula embryo
