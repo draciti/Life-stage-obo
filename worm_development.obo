@@ -1,13 +1,8 @@
-format-version: 1.0
-date: 01:30:2008 16:09
-saved-by: gwg
-auto-generated-by: DAG-Edit 1.419 rev 3
+date: 05:07:2012 16:09
 default-namespace: worm_development
 remark: Version: 1.04
-remark: Date: 01/25/08
-remark: Update: 12/21/11
 remark: Editors: Wen J. Chen & Daniela Raciti, WormBase, Caltech
-remark: This DAG flat files is created for Lifestage system used in WormBase
+
 
 [Term]
 id: WBls:0000041
