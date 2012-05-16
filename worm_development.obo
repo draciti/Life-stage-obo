@@ -17,7 +17,7 @@ name: C. elegans Development
 id: WBls:0000002
 name: all stages
 def: "All C. elegans development stages\, including embryo\, larva and adult stage." [wb:wjc]
-is_a: WBls:0000001 ! C. elegans Development DAG
+is_a: WBls:0000001 ! C. elegans Development
 
 [Term]
 id: WBls:0000003
