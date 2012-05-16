@@ -11,7 +11,7 @@ is_a: WBls:0000022 ! postembryonic
 
 [Term]
 id: WBls:0000001
-name: C. elegans Development DAG
+name: C. elegans Development
 
 [Term]
 id: WBls:0000002
