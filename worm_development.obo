@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 30:05:2012 09:47
+date: 02:10:2012 17:33
 saved-by: danielaraciti
 auto-generated-by: OBO-Edit 2.2-rc1
 default-namespace: worm_development
@@ -457,21 +457,21 @@ creation_date: 2012-05-30T09:07:05Z
 
 [Term]
 id: WBls:0000077
-name: sheathed microfilariae
+name: sheathed microfilariae Bma
 is_a: WBls:0000076 ! B. malayi Life Stage
 created_by: danielaraciti
 creation_date: 2012-05-30T09:23:44Z
 
 [Term]
 id: WBls:0000078
-name: unsheathed microfilariae
+name: unsheathed microfilariae Bma
 is_a: WBls:0000076 ! B. malayi Life Stage
 created_by: danielaraciti
 creation_date: 2012-05-30T09:29:01Z
 
 [Term]
 id: WBls:0000079
-name: L1 larva
+name: L1 larva Bma
 def: "The first stage larva." [wb:dr]
 is_a: WBls:0000076 ! B. malayi Life Stage
 created_by: danielaraciti
@@ -479,7 +479,7 @@ creation_date: 2012-05-30T09:29:36Z
 
 [Term]
 id: WBls:0000080
-name: L2 larva
+name: L2 larva Bma
 def: "The second stage larva." [wb:dr]
 is_a: WBls:0000076 ! B. malayi Life Stage
 created_by: danielaraciti
@@ -487,7 +487,7 @@ creation_date: 2012-05-30T09:30:40Z
 
 [Term]
 id: WBls:0000081
-name: L3 larva
+name: L3 larva Bma
 def: "The third stage larva." [wb:dr]
 is_a: WBls:0000076 ! B. malayi Life Stage
 created_by: danielaraciti
@@ -495,7 +495,7 @@ creation_date: 2012-05-30T09:31:06Z
 
 [Term]
 id: WBls:0000082
-name: L4 larva
+name: L4 larva Bma
 def: "The fourth stage larva." [wb:dr]
 is_a: WBls:0000076 ! B. malayi Life Stage
 created_by: danielaraciti
@@ -503,10 +503,55 @@ creation_date: 2012-05-30T09:31:38Z
 
 [Term]
 id: WBls:0000083
-name: Adult
+name: Adult Bma
 is_a: WBls:0000076 ! B. malayi Life Stage
 created_by: danielaraciti
 creation_date: 2012-05-30T09:32:18Z
+
+[Term]
+id: WBls:0000084
+name: 14-cell embryo
+def: "E-cell has divided into Ea and Ep. Contains 12 cells." [wb:dr]
+comment: 1: Levin M, Hashimshony T, Wagner F, Yanai I. Developmental milestones punctuate \ngene expression in the Caenorhabditis embryo. Dev Cell. 2012 May 15;22(5):1101-8.\nEpub 2012 May 3. PubMed PMID: 22560298. Supplementary table 1.
+is_a: WBls:0000005 ! blastula embryo
+created_by: danielaraciti
+creation_date: 2012-10-02T17:15:41Z
+
+[Term]
+id: WBls:0000085
+name: 24-cell embryo
+def: "Fourth cleavage of the AB lineage. Contains 24 cells." [wb:dr]
+comment: 1: Levin M, Hashimshony T, Wagner F, Yanai I. Developmental milestones punctuate \ngene expression in the Caenorhabditis embryo. Dev Cell. 2012 May 15;22(5):1101-8.\nEpub 2012 May 3. PubMed PMID: 22560298. Supplementary table 1.
+is_a: WBls:0000005 ! blastula embryo
+created_by: danielaraciti
+creation_date: 2012-10-02T17:23:32Z
+
+[Term]
+id: WBls:0000086
+name: 44-cell embryo
+def: "Fifth cleavage of the AB lineage. Contains 28 cells." [wb:dr]
+comment: 1: Levin M, Hashimshony T, Wagner F, Yanai I. Developmental milestones punctuate \ngene expression in the Caenorhabditis embryo. Dev Cell. 2012 May 15;22(5):1101-8.\nEpub 2012 May 3. PubMed PMID: 22560298. Supplementary table 1.
+is_a: WBls:0000010 ! gastrulating embryo
+created_by: danielaraciti
+creation_date: 2012-10-02T17:25:18Z
+
+[Term]
+id: WBls:0000087
+name: 68-cell embryo
+def: "Sixth cleavage of the AB lineage. Contains 68 cells." [wb:dr]
+comment: 1: Levin M, Hashimshony T, Wagner F, Yanai I. Developmental milestones punctuate \ngene expression in the Caenorhabditis embryo. Dev Cell. 2012 May 15;22(5):1101-8.\nEpub 2012 May 3. PubMed PMID: 22560298. Supplementary table 1.
+is_a: WBls:0000010 ! gastrulating embryo
+created_by: danielaraciti
+creation_date: 2012-10-02T17:26:52Z
+
+[Term]
+id: WBls:0000088
+name: 86-cell embryo
+def: "Seventh cleavage of the AB lineage. Contains 86 cells." [wb:dr]
+comment: 1: Levin M, Hashimshony T, Wagner F, Yanai I. Developmental milestones punctuate \ngene expression in the Caenorhabditis embryo. Dev Cell. 2012 May 15;22(5):1101-8.\nEpub 2012 May 3. PubMed PMID: 22560298. Supplementary table 1.
+is_a: WBls:0000010 ! gastrulating embryo
+created_by: danielaraciti
+creation_date: 2012-10-02T17:27:50Z
 
 [Typedef]
 id: is_a
