@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 02:10:2012 17:33
+date: 15:10:2012 13:27
 saved-by: danielaraciti
 auto-generated-by: OBO-Edit 2.2-rc1
 default-namespace: worm_development
@@ -53,7 +53,7 @@ is_a: WBls:0000005 ! blastula embryo
 [Term]
 id: WBls:0000009
 name: 28-cell embryo
-def: "100-105min after first cleaveage at 20 Centigrade. Contains 28 cells." [wb:wjc]
+def: "100-105 min after first cleaveage at 20 Centigrade. Contains 28 cells." [wb:wjc]
 is_a: WBls:0000010 ! gastrulating embryo
 
 [Term]
@@ -65,13 +65,13 @@ is_a: WBls:0000004 ! proliferating embryo
 [Term]
 id: WBls:0000011
 name: 51-cell embryo
-def: "120-135min after first cleavage at 20 Centigrade. Contains 51 cells." [wb:wjc]
+def: "120-135 min after first cleavage at 20 Centigrade. Contains 51 cells." [wb:wjc]
 is_a: WBls:0000010 ! gastrulating embryo
 
 [Term]
 id: WBls:0000012
 name: 88-cell embryo
-def: "145-150min after first cleavage at 20 Centigrade. Contains 88 cells." [wb:wjc]
+def: "145-150 min after first cleavage at 20 Centigrade. Contains 88 cells." [wb:wjc]
 is_a: WBls:0000010 ! gastrulating embryo
 
 [Term]
@@ -197,7 +197,7 @@ is_a: WBls:0000023 ! larva
 [Term]
 id: WBls:0000033
 name: postdauer-L4 lethargus
-def: "The stage during postdauer-L4 molt when an animal becomes lethargic, ceases pharyngeal pumping and synthesizes new cuticle under the old.  " [wb:wjc]
+def: "The stage during postdauer-L4 molt when an animal becomes lethargic, ceases pharyngeal pumping and synthesizes new cuticle under the old." [wb:wjc]
 is_a: WBls:0000034 ! postdauer-L4 molt
 
 [Term]
@@ -310,7 +310,7 @@ is_a: WBls:0000034 ! postdauer-L4 molt
 [Term]
 id: WBls:0000052
 name: post dauer stage
-def: "The stage right after an animal recovered from dauer but has not started transformation to L4 larva yet. " [wb:wjc]
+def: "The stage right after an animal recovered from dauer but has not started transformation to L4 larva yet." [wb:wjc]
 is_a: WBls:0000023 ! larva
 
 [Term]
@@ -512,7 +512,7 @@ creation_date: 2012-05-30T09:32:18Z
 id: WBls:0000084
 name: 14-cell embryo
 def: "E-cell has divided into Ea and Ep. Contains 14 cells." [wb:dr]
-comment: Levin M, Hashimshony T, Wagner F, Yanai I. Developmental milestones punctuate gene expression in the Caenorhabditis embryo. Dev Cell. 2012 May 15;22(5):1101-8.Epub 2012 May 3. PubMed PMID: 22560298. Supplementary table 1.
+comment: Levin M, Hashimshony T, Wagner F, Yanai I. Developmental milestones punctuate gene expression in the Caenorhabditis embryo. Dev Cell. 2012 May 15;22(5):1101-8. Epub 2012 May 3. PubMed PMID: 22560298. Supplementary table 1.
 is_a: WBls:0000005 ! blastula embryo
 created_by: danielaraciti
 creation_date: 2012-10-02T17:15:41Z
@@ -521,7 +521,7 @@ creation_date: 2012-10-02T17:15:41Z
 id: WBls:0000085
 name: 24-cell embryo
 def: "Fourth cleavage of the AB lineage. Contains 24 cells." [wb:dr]
-comment: Levin M, Hashimshony T, Wagner F, Yanai I. Developmental milestones punctuate gene expression in the Caenorhabditis embryo. Dev Cell. 2012 May 15;22(5):1101-8.Epub 2012 May 3. PubMed PMID: 22560298. Supplementary table 1.
+comment: Levin M, Hashimshony T, Wagner F, Yanai I. Developmental milestones punctuate gene expression in the Caenorhabditis embryo. Dev Cell. 2012 May 15;22(5):1101-8. Epub 2012 May 3. PubMed PMID: 22560298. Supplementary table 1.
 is_a: WBls:0000005 ! blastula embryo
 created_by: danielaraciti
 creation_date: 2012-10-02T17:23:32Z
@@ -530,7 +530,7 @@ creation_date: 2012-10-02T17:23:32Z
 id: WBls:0000086
 name: 44-cell embryo
 def: "Fifth cleavage of the AB lineage. Contains 44 cells." [wb:dr]
-comment: Levin M, Hashimshony T, Wagner F, Yanai I. Developmental milestones punctuate gene expression in the Caenorhabditis embryo. Dev Cell. 2012 May 15;22(5):1101-8.Epub 2012 May 3. PubMed PMID: 22560298. Supplementary table 1.
+comment: Levin M, Hashimshony T, Wagner F, Yanai I. Developmental milestones punctuate gene expression in the Caenorhabditis embryo. Dev Cell. 2012 May 15;22(5):1101-8. Epub 2012 May 3. PubMed PMID: 22560298. Supplementary table 1.
 is_a: WBls:0000010 ! gastrulating embryo
 created_by: danielaraciti
 creation_date: 2012-10-02T17:25:18Z
@@ -539,7 +539,7 @@ creation_date: 2012-10-02T17:25:18Z
 id: WBls:0000087
 name: 68-cell embryo
 def: "Sixth cleavage of the AB lineage. Contains 68 cells." [wb:dr]
-comment: Levin M, Hashimshony T, Wagner F, Yanai I. Developmental milestones punctuate gene expression in the Caenorhabditis embryo. Dev Cell. 2012 May 15;22(5):1101-8.Epub 2012 May 3. PubMed PMID: 22560298. Supplementary table 1.
+comment: Levin M, Hashimshony T, Wagner F, Yanai I. Developmental milestones punctuate gene expression in the Caenorhabditis embryo. Dev Cell. 2012 May 15;22(5):1101-8. Epub 2012 May 3. PubMed PMID: 22560298. Supplementary table 1.
 is_a: WBls:0000010 ! gastrulating embryo
 created_by: danielaraciti
 creation_date: 2012-10-02T17:26:52Z
@@ -548,10 +548,18 @@ creation_date: 2012-10-02T17:26:52Z
 id: WBls:0000088
 name: 86-cell embryo
 def: "Seventh cleavage of the AB lineage. Contains 86 cells." [wb:dr]
-comment: Levin M, Hashimshony T, Wagner F, Yanai I. Developmental milestones punctuate gene expression in the Caenorhabditis embryo. Dev Cell. 2012 May 15;22(5):1101-8.Epub 2012 May 3. PubMed PMID: 22560298. Supplementary table 1.
+comment: Levin M, Hashimshony T, Wagner F, Yanai I. Developmental milestones punctuate gene expression in the Caenorhabditis embryo. Dev Cell. 2012 May 15;22(5):1101-8. Epub 2012 May 3. PubMed PMID: 22560298. Supplementary table 1.
 is_a: WBls:0000010 ! gastrulating embryo
 created_by: danielaraciti
 creation_date: 2012-10-02T17:27:50Z
+
+[Term]
+id: WBls:0000089
+name: 190-cells embryo
+def: "P4 and M cells have finished migrating. Contains 190 cells." [wb:dr]
+is_a: WBls:0000010 ! gastrulating embryo
+created_by: danielaraciti
+creation_date: 2012-10-15T13:19:10Z
 
 [Typedef]
 id: is_a
