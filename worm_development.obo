@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 15:10:2012 13:27
+date: 16:10:2012 15:38
 saved-by: danielaraciti
 auto-generated-by: OBO-Edit 2.2-rc1
 default-namespace: worm_development
@@ -560,6 +560,14 @@ def: "P4 and M cells have finished migrating. Contains 190 cells." [wb:dr]
 is_a: WBls:0000010 ! gastrulating embryo
 created_by: danielaraciti
 creation_date: 2012-10-15T13:19:10Z
+
+[Term]
+id: WBls:0000090
+name: 96-cell embryo
+def: "155-165 min after first cleavage at 20 Centigrade. Contains 96 cells." [wb:dr]
+is_a: WBls:0000010 ! gastrulating embryo
+created_by: danielaraciti
+creation_date: 2012-10-16T15:37:30Z
 
 [Typedef]
 id: is_a
