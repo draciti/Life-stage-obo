@@ -8,17 +8,20 @@ remark: Editors: Wen J. Chen & Daniela Raciti, WormBase, Caltech
 
 [Term]
 id: WBls:0000001
-name: C. elegans Life Stage
-alt_id: WBls:0000002
-def: "All C. elegans development stages, including embryo, larva and adult stage." []
-synonym: "all stages" EXACT []
+name: C. elegans Development 
 is_a: WBls:0000075 ! Nematoda Life Stage
+
+[Term]
+id: WBls:0000002
+name: all stages
+def: "All C. elegans development stages, including embryo, larva and adult stage." [wb:wjc]
+is_a: WBls:0000001 ! C. elegans Development
 
 [Term]
 id: WBls:0000003
 name: embryo
 def: "The whole period of embryogenesis, from the formation of an egg till its hatch. " [wb:wjc]
-is_a: WBls:0000001 ! C. elegans Life Stage
+is_a: WBls:0000002 ! all stages
 
 [Term]
 id: WBls:0000004
@@ -132,7 +135,7 @@ is_a: WBls:0000003 ! embryo
 id: WBls:0000022
 name: postembryonic
 def: "The stage after hatch till death." [wb:wjc]
-is_a: WBls:0000001 ! C. elegans Life Stage
+is_a: WBls:0000002 ! all stages
 
 [Term]
 id: WBls:0000023
