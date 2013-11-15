@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 06:06:2013 04:53
+date: 15:11:2013 02:42
 saved-by: danielaraciti
 auto-generated-by: OBO-Edit 2.2-rc1
 default-namespace: worm_development
@@ -393,7 +393,7 @@ is_a: WBls:0000057 ! adult hermaphrodite
 [Term]
 id: WBls:0000060
 name: reproductive stage adult hermaphrodite
-def: "Adult hermaphrodites continuously laying fertilized eggs. hermaphrodite in egg laying stages--ususally up to 4/5 days after L4-adult molt at Centigrade. From the first fertilized egg is laid, til all sperms are used. At 20 Centigrade: 13 hours after L4-adult molt until about 5.4 days after the L4-adult molt. 3-8.4 days after first cleavage." [wb:wjc]
+def: "Adult hermaphrodites continuously laying fertilized eggs. Hermaphrodite in egg laying stages--usually up to 4/5 days after L4-adult molt at Centigrade. From the first fertilized egg is laid, till all sperms are used. At 20 Centigrade: 13 hours after L4-adult molt until about 5.4 days after the L4-adult molt. 3-8.4 days after first cleavage." [wb:wjc]
 is_a: WBls:0000057 ! adult hermaphrodite
 
 [Term]
@@ -507,54 +507,58 @@ creation_date: 2012-05-30T09:07:05Z
 
 [Term]
 id: WBls:0000077
-name: sheathed microfilariae Bma
-is_a: WBls:0000076 ! B. malayi Life Stage
+name: sheathed microfilaria Bma
+def: "Microfilaria is the stage which develops from the egg and precedes the L1 stage. The larvae are surrounded by a membrane thought to be derived from the vitelline membrane." [wb:dr&mb]
+synonym: "<new synonym>" RELATED []
+synonym: "microfilaria" EXACT []
+is_a: WBls:0000097 ! larva Bma
 created_by: danielaraciti
 creation_date: 2012-05-30T09:23:44Z
 
 [Term]
-id: WBls:0000078
-name: unsheathed microfilariae Bma
-is_a: WBls:0000076 ! B. malayi Life Stage
-created_by: danielaraciti
-creation_date: 2012-05-30T09:29:01Z
-
-[Term]
 id: WBls:0000079
 name: L1 larva Bma
-def: "The first stage larva." [wb:dr]
-is_a: WBls:0000076 ! B. malayi Life Stage
+alt_id: WBls:0000078
+def: "The first stage larva. Also known as vector-derived microfilaria. The microfilaria sheds the sheath and matures to a 'proper L1' in the bloodmeal in the vector gut, and then migrates to the muscles." [WB:dr&mb]
+synonym: "unsheathed microfilaria Bma" EXACT []
+is_a: WBls:0000097 ! larva Bma
+relationship: preceded_by WBls:0000077 ! sheathed microfilaria Bma
 created_by: danielaraciti
 creation_date: 2012-05-30T09:29:36Z
 
 [Term]
 id: WBls:0000080
 name: L2 larva Bma
-def: "The second stage larva." [wb:dr]
-is_a: WBls:0000076 ! B. malayi Life Stage
+def: "The second stage larva. Derived from flight muscles of vector host; some development in vitro, with L1 to L2 moulting, has been demonstrated but rarely; these are often staged by hours or days post blood meal." [wb:dr&mb]
+is_a: WBls:0000097 ! larva Bma
+relationship: preceded_by WBls:0000079 ! L1 larva Bma
 created_by: danielaraciti
 creation_date: 2012-05-30T09:30:40Z
 
 [Term]
 id: WBls:0000081
 name: L3 larva Bma
-def: "The third stage larva." [wb:dr]
-is_a: WBls:0000076 ! B. malayi Life Stage
+def: "The third stage larva." [wb:dr&mb]
+is_a: WBls:0000097 ! larva Bma
+relationship: preceded_by WBls:0000080 ! L2 larva Bma
 created_by: danielaraciti
 creation_date: 2012-05-30T09:31:06Z
 
 [Term]
 id: WBls:0000082
 name: L4 larva Bma
-def: "The fourth stage larva." [wb:dr]
-is_a: WBls:0000076 ! B. malayi Life Stage
+def: "The fourth stage larva. Should be conditioned by days post infection; as moulting is not synchronous, some samples are defined as L3/L4, indicating a mix of individuals as late L3, moulting, and early L4." [wb:dr&mb]
+is_a: WBls:0000097 ! larva Bma
+relationship: preceded_by WBls:0000081 ! L3 larva Bma
 created_by: danielaraciti
 creation_date: 2012-05-30T09:31:38Z
 
 [Term]
 id: WBls:0000083
-name: Adult Bma
-is_a: WBls:0000076 ! B. malayi Life Stage
+name: adult Bma
+def: "Adults (or at least adult females) can live for 10 years in a human host, and can outlive their rodent laboratory hosts; it is usual to state the chronological age of the nematodes in days or months post-infection, and occasionally post-patency (the production of first microfilariae." [WB:dr&mb]
+is_a: WBls:0000093 ! postembryonic Bma
+relationship: preceded_by WBls:0000100 ! young adult
 created_by: danielaraciti
 creation_date: 2012-05-30T09:32:18Z
 
@@ -625,6 +629,94 @@ is_a: WBls:0000010 ! gastrulating embryo
 relationship: preceded_by WBls:0000012 ! 88-cell embryo
 created_by: danielaraciti
 creation_date: 2012-10-16T15:37:30Z
+
+[Term]
+id: WBls:0000091
+name: all stages Bma
+def: "All B. malayi developmental stages, including embryo, larva and adult stage." [wb:dr&mb]
+is_a: WBls:0000076 ! B. malayi Life Stage
+created_by: danielaraciti
+creation_date: 2013-11-12T03:18:57Z
+
+[Term]
+id: WBls:0000092
+name: embryo Bma
+def: "The whole period of embryogenesis, from the formation of an egg till its hatch." [WB:dr]
+is_a: WBls:0000091 ! all stages Bma
+created_by: danielaraciti
+creation_date: 2013-11-12T04:48:28Z
+
+[Term]
+id: WBls:0000093
+name: postembryonic Bma
+def: "The stage after hatch till death." [WB:dr]
+is_a: WBls:0000091 ! all stages Bma
+relationship: preceded_by WBls:0000092 ! embryo Bma
+created_by: danielaraciti
+creation_date: 2013-11-12T04:50:29Z
+
+[Term]
+id: WBls:0000094
+name: early embryo Bma
+def: "Proliferates from 1 to 100 cells. As the Brugia female reproductive tract is long (>10 cm), it is possible to dissect it and select early embryos just by isolating early parts of the post-spermatheca uterus." [WB:dr&mb]
+is_a: WBls:0000092 ! embryo Bma
+created_by: danielaraciti
+creation_date: 2013-11-12T04:55:53Z
+
+[Term]
+id: WBls:0000095
+name: middle embryo Bma
+def: "Proliferates from 100 cells to Lima bean stage." [WB:dr&mb]
+is_a: WBls:0000092 ! embryo Bma
+relationship: preceded_by WBls:0000094 ! early embryo Bma
+created_by: danielaraciti
+creation_date: 2013-11-12T04:59:19Z
+
+[Term]
+id: WBls:0000096
+name: late embryo Bma
+def: "From Lima bean to hatching." [WB:dr&mb]
+is_a: WBls:0000092 ! embryo Bma
+relationship: preceded_by WBls:0000095 ! middle embryo Bma
+created_by: danielaraciti
+creation_date: 2013-11-12T05:00:28Z
+
+[Term]
+id: WBls:0000097
+name: larva Bma
+def: "The stage after hatch till death." [WB:dr]
+is_a: WBls:0000093 ! postembryonic Bma
+relationship: preceded_by WBls:0000092 ! embryo Bma
+created_by: danielaraciti
+creation_date: 2013-11-12T05:12:19Z
+
+[Term]
+id: WBls:0000098
+name: vector-derived L3
+def: "Also known as infective L3, or iL3; i.e. isolated from the vector salivary glands; these samples may / should be conditioned by age, which is usually counted in days from the blood meal." [wb:dr&mb]
+synonym: "iL3" RELATED []
+synonym: "infective L3" RELATED []
+is_a: WBls:0000081 ! L3 larva Bma
+created_by: danielaraciti
+creation_date: 2013-11-12T05:23:54Z
+
+[Term]
+id: WBls:0000099
+name: post-infection L3
+def: "Derived from the host after reintroduction by vector feeding or manual inoculation; these piL3 samples are often / should be conditioned by age (hours or days post-infection)." [wb:dr&mb]
+synonym: "piL3" RELATED []
+is_a: WBls:0000081 ! L3 larva Bma
+created_by: danielaraciti
+creation_date: 2013-11-12T05:24:59Z
+
+[Term]
+id: WBls:0000100
+name: young adult
+def: "The animals have a significant \"prepatent\" period in the host, where they have moulted to adults but not yet started producing eggs or sperm; this stage is usually / should be conditioned by days post infection, with day 26 to approximately day 60 being the \"young adult\" in most systems - but note that the speed of development is different in different host genotypes." [wb:dr&mb]
+is_a: WBls:0000093 ! postembryonic Bma
+relationship: preceded_by WBls:0000082 ! L4 larva Bma
+created_by: danielaraciti
+creation_date: 2013-11-12T05:37:52Z
 
 [Typedef]
 id: is_a
