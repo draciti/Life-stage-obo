@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 18:11:2013 05:07
+date: 18:11:2013 06:02
 saved-by: danielaraciti
 auto-generated-by: OBO-Edit 2.2-rc1
 default-namespace: worm_development
@@ -20,7 +20,7 @@ is_a: WBls:0000001 ! C. elegans Development
 [Term]
 id: WBls:0000003
 name: embryo
-def: "The whole period of embryogenesis, from the formation of an egg till its hatch. " [wb:wjc]
+def: "The whole period of embryogenesis, from the formation of an egg till its hatch." [wb:wjc]
 is_a: WBls:0000002 ! all stages
 
 [Term]
@@ -194,7 +194,7 @@ relationship: preceded_by WBls:0000026 ! L1-L2 molt
 [Term]
 id: WBls:0000028
 name: L2-L3 lethargus
-def: "The stage during L2-L3 molt when an animal becomes lethargic, ceases pharyngeal pumping and synthesizes new cuticle under the old. " [wb:wjc]
+def: "The stage during L2-L3 molt when an animal becomes lethargic, ceases pharyngeal pumping and synthesizes new cuticle under the old." [wb:wjc]
 is_a: WBls:0000029 ! L2-L3 molt
 
 [Term]
@@ -207,14 +207,14 @@ relationship: preceded_by WBls:0000027 ! L2 larva
 [Term]
 id: WBls:0000030
 name: L2d-dauer lethargus
-def: "The stage during L2d-dauer molt when an animal becomes lethargic, ceases pharyngeal pumping and synthesizes new cuticle under the old. " [wb:wjc]
+def: "The stage during L2d-dauer molt when an animal becomes lethargic, ceases pharyngeal pumping and synthesizes new cuticle under the old." [wb:wjc]
 is_a: WBls:0000031 ! L2d-dauer molt
 
 [Term]
 id: WBls:0000031
 name: L2d-dauer molt
-def: "The stage when an animal shifts from L2d larva to dauer larva. It includes the synthesis of new cuticle, cease of phrayngeal pumping during a lethargus stage, and the shed off of old cuticle. " [wb:wjc]
-is_a: WBls:0000046 ! L2d larva
+def: "The stage when an animal shifts from L2d larva to dauer larva. It includes the synthesis of new cuticle, cease of pharyngeal pumping during a lethargus stage, and the shed off of old cuticle." [wb:wjc]
+is_a: WBls:0000023 ! larva
 
 [Term]
 id: WBls:0000032
@@ -276,6 +276,7 @@ id: WBls:0000040
 name: L4-adult molt
 def: "The stage when an animal shifts from L4 larva to adult. It includes the synthesis of new cuticle, cease of phrayngeal pumping during a lethargus stage, and the shed off of old cuticle." [wb:wjc]
 is_a: WBls:0000023 ! larva
+relationship: preceded_by WBls:0000038 ! L4 larva
 
 [Term]
 id: WBls:0000041
