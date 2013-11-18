@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 15:11:2013 02:42
+date: 18:11:2013 03:55
 saved-by: danielaraciti
 auto-generated-by: OBO-Edit 2.2-rc1
 default-namespace: worm_development
@@ -116,7 +116,7 @@ relationship: preceded_by WBls:0000014 ! late cleavage stage embryo
 [Term]
 id: WBls:0000017
 name: comma embryo
-def: "390-420min after first cleavage at 20 Centigrade. Cell number remains at ~560 cells, with some new cells generated and some cells go through programmed cell death. The shape of embryo looks like a comma. A stage between bean embryo and 1.5-fold embryo. " [wb:wjc]
+def: "390-420min after first cleavage at 20 Centigrade. Cell number remains at ~560 cells, with some new cells generated and some cells go through programmed cell death. The shape of embryo looks like a comma. A stage between bean embryo and 1.5-fold embryo." [wb:wjc]
 is_a: WBls:0000015 ! elongating embryo
 relationship: preceded_by WBls:0000016 ! bean embryo
 
@@ -173,14 +173,14 @@ relationship: preceded_by WBls:0000003 ! embryo
 [Term]
 id: WBls:0000025
 name: L1-L2 lethargus
-def: "The stage during L1-L2 molt when an animal becomes lethargic, ceases pharyngeal pumping and synthesizes new cuticle under the old. " [wb:wjc]
+def: "The stage during L1-L2 molt when an animal becomes lethargic, ceases pharyngeal pumping and synthesizes new cuticle under the old." [wb:wjc]
 is_a: WBls:0000026 ! L1-L2 molt
 
 [Term]
 id: WBls:0000026
 name: L1-L2 molt
 def: "The stage when an animal shifts from L1 larva to L2 larva. It includes the synthesis of new cuticle, cease of phrayngeal pumping during a lethargus stage, and the shed off of old cuticle." [wb:wjc]
-is_a: WBls:0000024 ! L1 larva
+is_a: WBls:0000023 ! larva
 relationship: preceded_by WBls:0000024 ! L1 larva
 
 [Term]
@@ -201,7 +201,7 @@ is_a: WBls:0000029 ! L2-L3 molt
 id: WBls:0000029
 name: L2-L3 molt
 def: "The stage when an animal shifts from L2 larva to L3 larva. It includes the synthesis of new cuticle, cease of phrayngeal pumping during a lethargus stage, and the shed off of old cuticle." [wb:wjc]
-is_a: WBls:0000027 ! L2 larva
+is_a: WBls:0000023 ! larva
 relationship: preceded_by WBls:0000027 ! L2 larva
 
 [Term]
@@ -219,7 +219,7 @@ is_a: WBls:0000046 ! L2d larva
 [Term]
 id: WBls:0000032
 name: dauer larva
-def: "A third stage larva specialized for dispersal and long term survival.  " [ISBN:0-87969-433-5]
+def: "A third stage larva specialized for dispersal and long term survival." [ISBN:0-87969-433-5]
 is_a: WBls:0000023 ! larva
 relationship: preceded_by WBls:0000027 ! L2 larva
 
@@ -253,7 +253,7 @@ is_a: WBls:0000037 ! L3-L4 molt
 id: WBls:0000037
 name: L3-L4 molt
 def: "The stage when an animal shifts from L3 larva to L4 larva. It includes the synthesis of new cuticle, cease of phrayngeal pumping during a lethargus stage, and the shed off of old cuticle." [wb:wjc]
-is_a: WBls:0000035 ! L3 larva
+is_a: WBls:0000023 ! larva
 relationship: preceded_by WBls:0000035 ! L3 larva
 
 [Term]
@@ -274,11 +274,12 @@ is_a: WBls:0000040 ! L4-adult molt
 id: WBls:0000040
 name: L4-adult molt
 def: "The stage when an animal shifts from L4 larva to adult. It includes the synthesis of new cuticle, cease of phrayngeal pumping during a lethargus stage, and the shed off of old cuticle." [wb:wjc]
-is_a: WBls:0000038 ! L4 larva
+is_a: WBls:0000023 ! larva
 
 [Term]
 id: WBls:0000041
 name: adult
+def: "The stage after an animal is fully-developed and reaches maturity." [wb:wjc]
 is_a: WBls:0000022 ! postembryonic
 relationship: preceded_by WBls:0000023 ! larva
 relationship: preceded_by WBls:0000038 ! L4 larva
@@ -295,12 +296,12 @@ relationship: preceded_by WBls:0000025 ! L1-L2 lethargus
 id: WBls:0000043
 name: L1-L2d molt
 def: "The stage when an animal shifts from L1 larva to L2d larva. It includes the synthesis of new cuticle, cease of phrayngeal pumping during a lethargus stage, and the shed off of old cuticle." [wb:wjc]
-is_a: WBls:0000024 ! L1 larva
+is_a: WBls:0000023 ! larva
 
 [Term]
 id: WBls:0000044
 name: L1-L2d lethargus
-def: "The stage during L1-L2d molt when an animal becomes lethargic, ceases pharyngeal pumping and synthesizes new cuticle under the old. " [wb:wjc]
+def: "The stage during L1-L2d molt when an animal becomes lethargic, ceases pharyngeal pumping and synthesizes new cuticle under the old." [wb:wjc]
 is_a: WBls:0000043 ! L1-L2d molt
 
 [Term]
@@ -558,7 +559,7 @@ id: WBls:0000083
 name: adult Bma
 def: "Adults (or at least adult females) can live for 10 years in a human host, and can outlive their rodent laboratory hosts; it is usual to state the chronological age of the nematodes in days or months post-infection, and occasionally post-patency (the production of first microfilariae." [WB:dr&mb]
 is_a: WBls:0000093 ! postembryonic Bma
-relationship: preceded_by WBls:0000100 ! young adult
+relationship: preceded_by WBls:0000100 ! young adult Bma
 created_by: danielaraciti
 creation_date: 2012-05-30T09:32:18Z
 
