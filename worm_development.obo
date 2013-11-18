@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 18:11:2013 03:55
+date: 18:11:2013 05:07
 saved-by: danielaraciti
 auto-generated-by: OBO-Edit 2.2-rc1
 default-namespace: worm_development
@@ -261,6 +261,7 @@ id: WBls:0000038
 name: L4 larva
 def: "The fourth stage larva. At 25 Centigrade, it ranges 40-49.5 hours after fertilization, 26-35.5 hours after hatch." [wb:wjc]
 is_a: WBls:0000023 ! larva
+relationship: preceded_by WBls:0000032 ! dauer larva
 relationship: preceded_by WBls:0000035 ! L3 larva
 relationship: preceded_by WBls:0000037 ! L3-L4 molt
 
