@@ -694,7 +694,7 @@ creation_date: 2013-11-12T05:12:19Z
 [Term]
 id: WBls:0000098
 name: vector-derived L3 Bma
-def: "Also known as infective L3, or iL3; i.e. isolated from the vector salivary glands; these samples may / should be conditioned by age, which is usually counted in days from the blood meal." [wb:dr&mb]
+def: "Also known as infective L3, or iL3; i.e. isolated from the vector salivary glands; these samples may-should be conditioned by age, which is usually counted in days from the blood meal." [wb:dr&mb]
 synonym: "iL3" RELATED []
 synonym: "infective L3" RELATED []
 is_a: WBls:0000081 ! L3 larva Bma
@@ -704,7 +704,7 @@ creation_date: 2013-11-12T05:23:54Z
 [Term]
 id: WBls:0000099
 name: post-infection L3 Bma
-def: "Derived from the host after reintroduction by vector feeding or manual inoculation; these piL3 samples are often / should be conditioned by age (hours or days post-infection)." [wb:dr&mb]
+def: "Derived from the host after reintroduction by vector feeding or manual inoculation; these piL3 samples are often-should be conditioned by age (hours or days post-infection)." [wb:dr&mb]
 synonym: "piL3" RELATED []
 is_a: WBls:0000081 ! L3 larva Bma
 created_by: danielaraciti
@@ -713,7 +713,7 @@ creation_date: 2013-11-12T05:24:59Z
 [Term]
 id: WBls:0000100
 name: young adult Bma
-def: "The animals have a significant \"prepatent\" period in the host, where they have moulted to adults but not yet started producing eggs or sperm; this stage is usually / should be conditioned by days post infection, with day 26 to approximately day 60 being the \"young adult\" in most systems - but note that the speed of development is different in different host genotypes." [wb:dr&mb]
+def: "The animals have a significant \"prepatent\" period in the host, where they have moulted to adults but not yet started producing eggs or sperm; this stage is usually-should be conditioned by days post infection, with day 26 to approximately day 60 being the \"young adult\" in most systems - but note that the speed of development is different in different host genotypes." [wb:dr&mb]
 is_a: WBls:0000093 ! postembryonic Bma
 relationship: preceded_by WBls:0000082 ! L4 larva Bma
 created_by: danielaraciti
