@@ -502,7 +502,7 @@ creation_date: 2012-05-30T09:04:28Z
 
 [Term]
 id: WBls:0000076
-name: B. malayi Life Stage
+name: B. malayi Development
 def: "All B. malayi development stages, including embryo, larva and adult stage." [wb:dr]
 is_a: WBls:0000075 ! Nematoda Life Stage
 created_by: danielaraciti
@@ -687,7 +687,7 @@ creation_date: 2013-11-12T05:00:28Z
 [Term]
 id: WBls:0000097
 name: larva Bma
-def: "The stage after hatch till death." [WB:dr]
+def: "From the time after hatch till becomes adult." [WB:dr]
 is_a: WBls:0000093 ! postembryonic Bma
 relationship: preceded_by WBls:0000092 ! embryo Bma
 created_by: danielaraciti
