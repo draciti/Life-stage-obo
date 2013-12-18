@@ -559,7 +559,7 @@ creation_date: 2012-05-30T09:31:38Z
 [Term]
 id: WBls:0000083
 name: adult Bma
-def: "Adults (or at least adult females) can live for 10 years in a human host, and can outlive their rodent laboratory hosts; it is usual to state the chronological age of the nematodes in days or months post-infection, and occasionally post-patency (the production of first microfilariae." [WB:dr&mb]
+def: "Adults (or at least adult females) can live for 10 years in a human host, and can outlive their rodent laboratory hosts; it is usual to state the chronological age of the nematodes in days or months post-infection, and occasionally post-patency (the production of first microfilariae)." [WB:dr&mb]
 is_a: WBls:0000093 ! postembryonic Bma
 relationship: preceded_by WBls:0000100 ! young adult Bma
 created_by: danielaraciti
