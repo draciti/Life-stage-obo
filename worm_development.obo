@@ -732,7 +732,7 @@ creation_date: 2013-11-25T06:13:37Z
 id: WBls:0000102
 name: embryo nematode
 def: "The whole period of embryogenesis, from the formation of an egg till its hatch." [wb:dr]
-is_a: WBls:0000101 ! all stages
+is_a: WBls:0000101 ! all stages nematode
 created_by: danielaraciti
 creation_date: 2013-11-25T06:14:14Z
 
@@ -740,8 +740,8 @@ creation_date: 2013-11-25T06:14:14Z
 id: WBls:0000103
 name: postembryonic nematode
 def: "The stage after hatch till death." [wb:dr]
-is_a: WBls:0000101 ! all stages
-relationship: preceded_by WBls:0000102 ! embryo
+is_a: WBls:0000101 ! all stages nematode
+relationship: preceded_by WBls:0000102 ! embryo nematode
 created_by: danielaraciti
 creation_date: 2013-11-25T06:14:39Z
 
@@ -749,8 +749,8 @@ creation_date: 2013-11-25T06:14:39Z
 id: WBls:0000104
 name: adult nematode
 def: "The stage after an animal is fully-developed and reaches maturity." [wb:dr]
-is_a: WBls:0000103 ! postembryonic
-relationship: preceded_by WBls:0000105 ! larva
+is_a: WBls:0000103 ! postembryonic nematode
+relationship: preceded_by WBls:0000105 ! larva nematode
 created_by: danielaraciti
 creation_date: 2013-11-25T06:18:53Z
 
@@ -758,7 +758,7 @@ creation_date: 2013-11-25T06:18:53Z
 id: WBls:0000105
 name: larva nematode
 def: "From the time after hatch till becomes adult." [wb:dr]
-is_a: WBls:0000103 ! postembryonic
+is_a: WBls:0000103 ! postembryonic nematode
 created_by: danielaraciti
 creation_date: 2013-11-25T06:19:27Z
 
@@ -766,8 +766,8 @@ creation_date: 2013-11-25T06:19:27Z
 id: WBls:0000106
 name: L1 larva nematode
 def: "The first stage larva." [wb:dr]
-is_a: WBls:0000105 ! larva
-relationship: preceded_by WBls:0000110 ! sheathed microfilaria
+is_a: WBls:0000105 ! larva nematode
+relationship: preceded_by WBls:0000110 ! sheathed microfilaria nematode
 created_by: danielaraciti
 creation_date: 2013-11-25T06:20:28Z
 
@@ -775,8 +775,8 @@ creation_date: 2013-11-25T06:20:28Z
 id: WBls:0000107
 name: L2 larva nematode
 def: "The second stage larva." [wb:dr]
-is_a: WBls:0000105 ! larva
-relationship: preceded_by WBls:0000106 ! L1 larva
+is_a: WBls:0000105 ! larva nematode
+relationship: preceded_by WBls:0000106 ! L1 larva nematode
 created_by: danielaraciti
 creation_date: 2013-11-25T06:20:54Z
 
@@ -784,8 +784,8 @@ creation_date: 2013-11-25T06:20:54Z
 id: WBls:0000108
 name: L3 larva nematode
 def: "The third stage larva." [wb:dr]
-is_a: WBls:0000105 ! larva
-relationship: preceded_by WBls:0000107 ! L2 larva
+is_a: WBls:0000105 ! larva nematode
+relationship: preceded_by WBls:0000107 ! L2 larva nematode
 created_by: danielaraciti
 creation_date: 2013-11-25T06:21:33Z
 
@@ -793,8 +793,8 @@ creation_date: 2013-11-25T06:21:33Z
 id: WBls:0000109
 name: L4 larva nematode
 def: "The fourth stage larva." [wb:dr]
-is_a: WBls:0000105 ! larva
-relationship: preceded_by WBls:0000108 ! L3 larva
+is_a: WBls:0000105 ! larva nematode
+relationship: preceded_by WBls:0000108 ! L3 larva nematode
 created_by: danielaraciti
 creation_date: 2013-11-25T06:22:48Z
 
@@ -802,7 +802,7 @@ creation_date: 2013-11-25T06:22:48Z
 id: WBls:0000110
 name: sheathed microfilaria nematode
 def: "Microfilaria is the stage which develops from the egg and precedes the L1 stage. The larvae are surrounded by a membrane thought to be derived from the vitelline membrane." [wb:dr]
-is_a: WBls:0000105 ! larva
+is_a: WBls:0000105 ! larva nematode
 created_by: danielaraciti
 creation_date: 2013-11-25T06:23:23Z
 
