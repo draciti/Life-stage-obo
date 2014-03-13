@@ -3,19 +3,15 @@ date: 05:02:2014 02:13
 saved-by: danielaraciti
 auto-generated-by: OBO-Edit 2.2-rc1
 default-namespace: worm_development
+ontology: wbls
 remark: Version: 1.04
 remark: Editors: Wen J. Chen & Daniela Raciti, WormBase, Caltech
-
-[Term]
-id: WBls:0000001
-name: C. elegans Development
-is_a: WBls:0000075 ! Nematoda Life Stage
 
 [Term]
 id: WBls:0000002
 name: all stages Ce
 def: "All C. elegans development stages, including embryo, larva and adult stage." [wb:wjc]
-is_a: WBls:0000001 ! C. elegans Development
+is_a: WBls:0000075 ! Nematoda Life Stage
 
 [Term]
 id: WBls:0000003
@@ -501,14 +497,6 @@ created_by: danielaraciti
 creation_date: 2012-05-30T09:04:28Z
 
 [Term]
-id: WBls:0000076
-name: B. malayi Development
-def: "All B. malayi development stages, including embryo, larva and adult stage." [wb:dr]
-is_a: WBls:0000075 ! Nematoda Life Stage
-created_by: danielaraciti
-creation_date: 2012-05-30T09:07:05Z
-
-[Term]
 id: WBls:0000077
 name: sheathed microfilaria Bma
 def: "Microfilaria is the stage which develops from the egg and precedes the L1 stage. The larvae are surrounded by a membrane thought to be derived from the vitelline membrane." [wb:dr&mb]
@@ -636,7 +624,7 @@ creation_date: 2012-10-16T15:37:30Z
 id: WBls:0000091
 name: all stages Bma
 def: "All B. malayi developmental stages, including embryo, larva and adult stage." [wb:dr&mb]
-is_a: WBls:0000076 ! B. malayi Development
+is_a: WBls:0000075 ! Nematoda Life Stage
 created_by: danielaraciti
 creation_date: 2013-11-12T03:18:57Z
 
@@ -815,12 +803,14 @@ relationship: preceded_by WBls:0000074 ! 11-15 days post-L4 adult hermaphrodite 
 created_by: danielaraciti
 
 [Typedef]
-id: is_a
-name: is a
+id: part_of
+name: part of
+xref: BFO:0000050
+is_transitive: true
 
 [Typedef]
 id: preceded_by
 name: preceded_by
-created_by: danielaraciti
-creation_date: 2013-02-11T12:05:25Z
+xref: BFO:0000062
+is_transitive: true
 
