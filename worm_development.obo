@@ -814,3 +814,7 @@ name: preceded_by
 xref: BFO:0000062
 is_transitive: true
 
+[Typedef]
+id: starts_at_end_of
+name: starts_at_end_of
+is_a: preceded_by ! preceded_by
