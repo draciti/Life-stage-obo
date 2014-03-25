@@ -42,14 +42,14 @@ id: WBls:0000007
 name: 2-cell embryo Ce
 def: "0-20min after first cleavage at 20 Centigrade.  Contains 2 cells." [wb:wjc]
 relationship: part_of WBls:0000005 ! blastula embryo Ce
-relationship: preceded_by WBls:0000006 ! 1-cell embryo Ce
+relationship: starts_at_end_of WBls:0000006 ! 1-cell embryo Ce
 
 [Term]
 id: WBls:0000008
 name: 4-cell embryo Ce
 def: "20-40min after first cleavage at 20 Centigrade.  Contains 4 cells." [wb:wjc]
 relationship: part_of WBls:0000005 ! blastula embryo Ce
-relationship: preceded_by WBls:0000007 ! 2-cell embryo Ce
+relationship: starts_at_end_of WBls:0000007 ! 2-cell embryo Ce
 
 [Term]
 id: WBls:0000009
@@ -62,7 +62,7 @@ id: WBls:0000010
 name: gastrulating embryo Ce
 def: "100-290min after first cleavage at 20 Centigrade. Proliferate from 28 cells to 421  cells. Referring to the whole period of gastrulation." [wb:wjc]
 relationship: part_of WBls:0000004 ! proliferating embryo Ce
-relationship: preceded_by WBls:0000005 ! blastula embryo Ce
+relationship: starts_at_end_of WBls:0000005 ! blastula embryo Ce
 
 [Term]
 id: WBls:0000011
@@ -83,7 +83,7 @@ id: WBls:0000013
 name: enclosing embryo Ce
 def: "290-350min after first cleavage at 20 Centigrade. Proliferate from 421 cells to 560 cells. The stage when embryo just finished gastulation and is enclosing." [wb:wjc]
 relationship: part_of WBls:0000014 ! late cleavage stage embryo Ce
-relationship: preceded_by WBls:0000010 ! gastrulating embryo Ce
+relationship: starts_at_end_of WBls:0000010 ! gastrulating embryo Ce
 relationship: preceded_by WBls:0000014 ! late cleavage stage embryo Ce
 
 [Term]
@@ -98,7 +98,7 @@ id: WBls:0000015
 name: elongating embryo Ce
 def: "350-620min after first cleavage at 20 Centigrade. Cell number remains at ~560 cells, with some new cells generated and some cells go through programmed cell death. The stage that embryo starts elongation till elongation is over." [wb:wjc]
 relationship: part_of WBls:0000003 ! embryo Ce
-relationship: preceded_by WBls:0000004 ! proliferating embryo Ce
+relationship: starts_at_end_of WBls:0000004 ! proliferating embryo Ce
 relationship: preceded_by WBls:0000010 ! gastrulating embryo Ce
 
 [Term]
@@ -106,65 +106,65 @@ id: WBls:0000016
 name: bean embryo Ce
 def: "350-390min after first cleavage at 20 Centigrade.  Cell number remains at ~560 cells, with some new cells generated and some cells go through programmed cell death. Emrbyo elongation started but have not formed comma shape yet. The shape of embryo looks like a lima bean. A stage right before comma embryo. Also called lima embryo or lima bean stage." [wb:wjc]
 relationship: part_of WBls:0000015 ! elongating embryo Ce
-relationship: preceded_by WBls:0000013 ! enclosing embryo Ce
-relationship: preceded_by WBls:0000014 ! late cleavage stage embryo Ce
+relationship: starts_at_end_of WBls:0000013 ! enclosing embryo Ce
+relationship: starts_at_end_of WBls:0000014 ! late cleavage stage embryo Ce
 
 [Term]
 id: WBls:0000017
 name: comma embryo Ce
 def: "390-420min after first cleavage at 20 Centigrade. Cell number remains at ~560 cells, with some new cells generated and some cells go through programmed cell death. The shape of embryo looks like a comma. A stage between bean embryo and 1.5-fold embryo." [wb:wjc]
 relationship: part_of WBls:0000015 ! elongating embryo Ce
-relationship: preceded_by WBls:0000016 ! bean embryo Ce
+relationship: starts_at_end_of WBls:0000016 ! bean embryo Ce
 
 [Term]
 id: WBls:0000018
 name: 1.5-fold embryo Ce
 def: "420-460min after first cleavage at 20 Centigrade. Cell number remains at ~560 cells, with some new cells generated and some cells go through programmed cell death. The shape of embryo is elongated and fold back 50%. A stage between comma embryo and 2-fold embryo." [wb:wjc]
 relationship: part_of WBls:0000015 ! elongating embryo Ce
-relationship: preceded_by WBls:0000017 ! comma embryo Ce
+relationship: starts_at_end_of WBls:0000017 ! comma embryo Ce
 
 [Term]
 id: WBls:0000019
 name: 2-fold embryo Ce
 def: "460-520min after first cleavage at 20 Centigrade. Cell number remains at ~560 cells, with some new cells generated and some cells go through programmed cell death. The shape of embryo is elongated and double fold. A stage between 1.5-fold embryo and 3-fold embryo." [wb:wjc]
 relationship: part_of WBls:0000015 ! elongating embryo Ce
-relationship: preceded_by WBls:0000018 ! 1.5-fold embryo Ce
+relationship: starts_at_end_of WBls:0000018 ! 1.5-fold embryo Ce
 
 [Term]
 id: WBls:0000020
 name: 3-fold embryo Ce
 def: "520-620min after first cleavage at 20 Centigrade. Cell number remains at ~560 cells, with some new cells generated and some cells go through programmed cell death. The shape of embryo is elongated and tripple fold. A stage between 2-fold embryo and fully-elongated embryo. Also called pretzel embryo or pretzel stage." [wb:wjc]
 relationship: part_of WBls:0000015 ! elongating embryo Ce
-relationship: preceded_by WBls:0000019 ! 2-fold embryo Ce
+relationship: starts_at_end_of WBls:0000019 ! 2-fold embryo Ce
 
 [Term]
 id: WBls:0000021
 name: fully-elongated embryo Ce
 def: "620-800min(hatch) after first cleavage at 20 Centigrade. Cell number remains at ~560 cells, with some new cells generated and some cells go through programmed cell death. A stage after elongation is over. The last stage of embryogenesis. Also called pre-hatched embryo, late embryo or morphogenetic embryo." [wb:wjc]
 relationship: part_of WBls:0000003 ! embryo Ce
-relationship: preceded_by WBls:0000015 ! elongating embryo Ce
-relationship: preceded_by WBls:0000020 ! 3-fold embryo Ce
+relationship: starts_at_end_of WBls:0000015 ! elongating embryo Ce
+relationship: starts_at_end_of WBls:0000020 ! 3-fold embryo Ce
 
 [Term]
 id: WBls:0000022
 name: postembryonic Ce
 def: "The stage after hatch till death." [wb:wjc]
 is_a: WBls:0000002 ! all stages Ce
-relationship: preceded_by WBls:0000003 ! embryo Ce
+relationship: starts_at_end_of WBls:0000003 ! embryo Ce
 
 [Term]
 id: WBls:0000023
 name: larva Ce
 def: "From the time after hatch till becomes adult." [wb:wjc]
 relationship: part_of WBls:0000022 ! postembryonic Ce
-relationship: preceded_by WBls:0000003 ! embryo Ce
+relationship: starts_at_end_of WBls:0000003 ! embryo Ce
 
 [Term]
 id: WBls:0000024
 name: L1 larva Ce
 def: "The first stage larva. At 25 Centigrade, it ranges 14-25.5 hours after fertilization, 0-11.5 hours after hatch." [wb:wjc]
 relationship: part_of WBls:0000023 ! larva Ce
-relationship: preceded_by WBls:0000003 ! embryo Ce
+relationship: starts_at_end_of WBls:0000003 ! embryo Ce
 
 [Term]
 id: WBls:0000025
@@ -177,7 +177,7 @@ id: WBls:0000026
 name: L1-L2 molt Ce
 def: "The stage when an animal shifts from L1 larva to L2 larva. It includes the synthesis of new cuticle, cease of phrayngeal pumping during a lethargus stage, and the shed off of old cuticle." [wb:wjc]
 relationship: part_of WBls:0000023 ! larva Ce
-relationship: preceded_by WBls:0000024 ! L1 larva Ce
+relationship: starts_at_end_of WBls:0000024 ! L1 larva Ce
 
 [Term]
 id: WBls:0000027
@@ -185,7 +185,7 @@ name: L2 larva Ce
 def: "The second stage larva. At 25 Centigrade, it ranges 25.5-32.5 hours after fertilization, 11.5-18.5 hours after hatch." [wb:wjc]
 relationship: part_of WBls:0000023 ! larva Ce
 relationship: preceded_by WBls:0000024 ! L1 larva Ce
-relationship: preceded_by WBls:0000026 ! L1-L2 molt Ce
+relationship: starts_at_end_of WBls:0000026 ! L1-L2 molt Ce
 
 [Term]
 id: WBls:0000028
@@ -198,7 +198,7 @@ id: WBls:0000029
 name: L2-L3 molt Ce
 def: "The stage when an animal shifts from L2 larva to L3 larva. It includes the synthesis of new cuticle, cease of phrayngeal pumping during a lethargus stage, and the shed off of old cuticle." [wb:wjc]
 relationship: part_of WBls:0000023 ! larva Ce
-relationship: preceded_by WBls:0000027 ! L2 larva Ce
+relationship: starts_at_end_of WBls:0000027 ! L2 larva Ce
 
 [Term]
 id: WBls:0000030
@@ -237,7 +237,7 @@ name: L3 larva Ce
 def: "The third stage larva. At 25 Centigrade, it ranges 32.5-40 hours after fertilization, 18.5-26 hours after hatch." [wb:wjc]
 relationship: part_of WBls:0000023 ! larva Ce
 relationship: preceded_by WBls:0000027 ! L2 larva Ce
-relationship: preceded_by WBls:0000029 ! L2-L3 molt Ce
+relationship: starts_at_end_of WBls:0000029 ! L2-L3 molt Ce
 
 [Term]
 id: WBls:0000036
@@ -250,16 +250,16 @@ id: WBls:0000037
 name: L3-L4 molt Ce
 def: "The stage when an animal shifts from L3 larva to L4 larva. It includes the synthesis of new cuticle, cease of phrayngeal pumping during a lethargus stage, and the shed off of old cuticle." [wb:wjc]
 relationship: part_of WBls:0000023 ! larva Ce
-relationship: preceded_by WBls:0000035 ! L3 larva Ce
+relationship: starts_at_end_of WBls:0000035 ! L3 larva Ce
 
 [Term]
 id: WBls:0000038
 name: L4 larva Ce
 def: "The fourth stage larva. At 25 Centigrade, it ranges 40-49.5 hours after fertilization, 26-35.5 hours after hatch." [wb:wjc]
 relationship: part_of WBls:0000023 ! larva Ce
-relationship: preceded_by WBls:0000032 ! dauer larva Ce
+relationship: starts_at_end_of WBls:0000032 ! dauer larva Ce
 relationship: preceded_by WBls:0000035 ! L3 larva Ce
-relationship: preceded_by WBls:0000037 ! L3-L4 molt Ce
+relationship: starts_at_end_of WBls:0000037 ! L3-L4 molt Ce
 
 [Term]
 id: WBls:0000039
@@ -272,23 +272,23 @@ id: WBls:0000040
 name: L4-adult molt Ce
 def: "The stage when an animal shifts from L4 larva to adult. It includes the synthesis of new cuticle, cease of phrayngeal pumping during a lethargus stage, and the shed off of old cuticle." [wb:wjc]
 relationship: part_of WBls:0000023 ! larva Ce
-relationship: preceded_by WBls:0000038 ! L4 larva Ce
+relationship: starts_at_end_of WBls:0000038 ! L4 larva Ce
 
 [Term]
 id: WBls:0000041
 name: adult Ce
 def: "The stage after an animal is fully-developed and reaches maturity." [wb:wjc]
 relationship: part_of WBls:0000022 ! postembryonic Ce
-relationship: preceded_by WBls:0000023 ! larva Ce
+relationship: starts_at_end_of WBls:0000023 ! larva Ce
 relationship: preceded_by WBls:0000038 ! L4 larva Ce
-relationship: preceded_by WBls:0000040 ! L4-adult molt Ce
+relationship: starts_at_end_of WBls:0000040 ! L4-adult molt Ce
 
 [Term]
 id: WBls:0000042
 name: L1-L2 ecdysis Ce
 def: "The stage during L1-L2 molt, after the brief lethargus period, when an animal sheds off old cuticle." [wb:wjc]
 relationship: part_of WBls:0000026 ! L1-L2 molt Ce
-relationship: preceded_by WBls:0000025 ! L1-L2 lethargus Ce
+relationship: starts_at_end_of WBls:0000025 ! L1-L2 lethargus Ce
 
 [Term]
 id: WBls:0000043
@@ -319,7 +319,7 @@ id: WBls:0000047
 name: L2-L3 ecdysis Ce
 def: "The stage during L2-L3 molt, after the brief lethargus period, when an animal sheds off old cuticle." [wb:wjc]
 relationship: part_of WBls:0000029 ! L2-L3 molt Ce
-relationship: preceded_by WBls:0000028 ! L2-L3 lethargus Ce
+relationship: starts_at_end_of WBls:0000028 ! L2-L3 lethargus Ce
 
 [Term]
 id: WBls:0000048
@@ -332,14 +332,14 @@ id: WBls:0000049
 name: L3-L4 ecdysis Ce
 def: "The stage during L3-L4 molt, after the brief lethargus period, when an animal sheds off old cuticle." [wb:wjc]
 relationship: part_of WBls:0000037 ! L3-L4 molt Ce
-relationship: preceded_by WBls:0000036 ! L3-L4 lethargus Ce
+relationship: starts_at_end_of WBls:0000036 ! L3-L4 lethargus Ce
 
 [Term]
 id: WBls:0000050
 name: L4-adult ecdysis
 def: "The stage during L4-adult molt, after the brief lethargus period, when an animal shed off old cuticle." [wb:wjc]
 relationship: part_of WBls:0000040 ! L4-adult molt Ce
-relationship: preceded_by WBls:0000039 ! L4-adult lethargus Ce
+relationship: starts_at_end_of WBls:0000039 ! L4-adult lethargus Ce
 
 [Term]
 id: WBls:0000051
@@ -424,49 +424,49 @@ id: WBls:0000065
 name: 2-days post-L4 adult hermaphrodite Ce
 def: "At 20 Centigrade: 48-72 hours after L4-adult molt. 5-6 days after first cleavage." [wb:wjc]
 relationship: part_of WBls:0000057 ! adult hermaphrodite Ce
-relationship: preceded_by WBls:0000064 ! 1-day post-L4 adult hermaphrodite Ce
+relationship: starts_at_end_of WBls:0000064 ! 1-day post-L4 adult hermaphrodite Ce
 
 [Term]
 id: WBls:0000066
 name: 3-days post-L4 adult hermaphrodite Ce
 def: "At 20 Centigrade: 72-96 hours after L4-adult molt. 6-7 days after first cleavage." [wb:wjc]
 relationship: part_of WBls:0000057 ! adult hermaphrodite Ce
-relationship: preceded_by WBls:0000065 ! 2-days post-L4 adult hermaphrodite Ce
+relationship: starts_at_end_of WBls:0000065 ! 2-days post-L4 adult hermaphrodite Ce
 
 [Term]
 id: WBls:0000067
 name: 4-days post-L4 adult hermaphrodite Ce
 def: "At 20 Centigrade: 96-120 hours after L4-adult molt. 7-8 days after first cleavage." [wb:wjc]
 relationship: part_of WBls:0000057 ! adult hermaphrodite Ce
-relationship: preceded_by WBls:0000066 ! 3-days post-L4 adult hermaphrodite Ce
+relationship: starts_at_end_of WBls:0000066 ! 3-days post-L4 adult hermaphrodite Ce
 
 [Term]
 id: WBls:0000068
 name: 5-days post-L4 adult hermaphrodite Ce
 def: "At 20 Centigrade: 5-6 days after L4-adult molt. 8-9 days after first cleavage." [wb:wjc]
 relationship: part_of WBls:0000057 ! adult hermaphrodite Ce
-relationship: preceded_by WBls:0000067 ! 4-days post-L4 adult hermaphrodite Ce
+relationship: starts_at_end_of WBls:0000067 ! 4-days post-L4 adult hermaphrodite Ce
 
 [Term]
 id: WBls:0000069
 name: 4-7 days post-L4 adult hermaphrodite Ce
 def: "At 20 Centigrade: 4-7 days after L4-adult molt. 7-10 days after first cleavage." [wb:wjc]
 relationship: part_of WBls:0000057 ! adult hermaphrodite Ce
-relationship: preceded_by WBls:0000068 ! 5-days post-L4 adult hermaphrodite Ce
+relationship: starts_at_end_of WBls:0000068 ! 5-days post-L4 adult hermaphrodite Ce
 
 [Term]
 id: WBls:0000070
 name: 7-10 days post-L4 adult hermaphrodite Ce
 def: "At 20 Centigrade: 7-10 days after L4-adult molt. 10-13 days after first cleavage." [wb:wjc]
 relationship: part_of WBls:0000057 ! adult hermaphrodite Ce
-relationship: preceded_by WBls:0000069 ! 4-7 days post-L4 adult hermaphrodite Ce
+relationship: starts_at_end_of WBls:0000069 ! 4-7 days post-L4 adult hermaphrodite Ce
 
 [Term]
 id: WBls:0000071
 name: 8-cell embryo Ce
 def: "~50 min after first cleavage at 20 Centigrade.  Contains 8 cells." [wb:wjc]
 relationship: part_of WBls:0000005 ! blastula embryo Ce
-relationship: preceded_by WBls:0000008 ! 4-cell embryo Ce
+relationship: starts_at_end_of WBls:0000008 ! 4-cell embryo Ce
 
 [Term]
 id: WBls:0000072
@@ -486,7 +486,7 @@ id: WBls:0000074
 name: 11-15 days post-L4 adult hermaphrodite Ce
 def: "At 20 Centigrade: 11-15 days after L4-adult molt. 14-18 days after first cleavage." [wb:dr]
 relationship: part_of WBls:0000057 ! adult hermaphrodite Ce
-relationship: preceded_by WBls:0000070 ! 7-10 days post-L4 adult hermaphrodite Ce
+relationship: starts_at_end_of WBls:0000070 ! 7-10 days post-L4 adult hermaphrodite Ce
 created_by: danielaraciti
 creation_date: 2012-05-22T14:35:04Z
 
@@ -512,7 +512,7 @@ alt_id: WBls:0000078
 def: "The first stage larva. Also known as vector-derived microfilaria. The microfilaria sheds the sheath and matures to a 'proper L1' in the bloodmeal in the vector gut, and then migrates to the muscles." [WB:dr&mb]
 synonym: "unsheathed microfilaria Bma" EXACT []
 relationship: part_of WBls:0000097 ! larva Bma
-relationship: preceded_by WBls:0000077 ! sheathed microfilaria Bma
+relationship: starts_at_end_of WBls:0000077 ! sheathed microfilaria Bma
 created_by: danielaraciti
 creation_date: 2012-05-30T09:29:36Z
 
@@ -521,7 +521,7 @@ id: WBls:0000080
 name: L2 larva Bma
 def: "The second stage larva. Derived from flight muscles of vector host; some development in vitro, with L1 to L2 moulting, has been demonstrated but rarely; these are often staged by hours or days post blood meal." [wb:dr&mb]
 relationship: part_of WBls:0000097 ! larva Bma
-relationship: preceded_by WBls:0000079 ! L1 larva Bma
+relationship: starts_at_end_of WBls:0000079 ! L1 larva Bma
 created_by: danielaraciti
 creation_date: 2012-05-30T09:30:40Z
 
@@ -530,7 +530,7 @@ id: WBls:0000081
 name: L3 larva Bma
 def: "The third stage larva." [wb:dr&mb]
 relationship: part_of WBls:0000097 ! larva Bma
-relationship: preceded_by WBls:0000080 ! L2 larva Bma
+relationship: starts_at_end_of WBls:0000080 ! L2 larva Bma
 created_by: danielaraciti
 creation_date: 2012-05-30T09:31:06Z
 
@@ -539,7 +539,7 @@ id: WBls:0000082
 name: L4 larva Bma
 def: "The fourth stage larva. Should be conditioned by days post infection; as moulting is not synchronous, some samples are defined as L3/L4, indicating a mix of individuals as late L3, moulting, and early L4." [wb:dr&mb]
 relationship: part_of WBls:0000097 ! larva Bma
-relationship: preceded_by WBls:0000081 ! L3 larva Bma
+relationship: starts_at_end_of WBls:0000081 ! L3 larva Bma
 created_by: danielaraciti
 creation_date: 2012-05-30T09:31:38Z
 
@@ -548,7 +548,7 @@ id: WBls:0000083
 name: adult Bma
 def: "Adults (or at least adult females) can live for 10 years in a human host, and can outlive their rodent laboratory hosts; it is usual to state the chronological age of the nematodes in days or months post-infection, and occasionally post-patency (the production of first microfilariae)." [WB:dr&mb]
 relationship: part_of WBls:0000093 ! postembryonic Bma
-relationship: preceded_by WBls:0000100 ! young adult Bma
+relationship: starts_at_end_of WBls:0000100 ! young adult Bma
 created_by: danielaraciti
 creation_date: 2012-05-30T09:32:18Z
 
@@ -641,7 +641,7 @@ id: WBls:0000093
 name: postembryonic Bma
 def: "The stage after hatch till death." [WB:dr]
 is_a: WBls:0000091 ! all stages Bma
-relationship: preceded_by WBls:0000092 ! embryo Bma
+relationship: starts_at_end_of WBls:0000092 ! embryo Bma
 created_by: danielaraciti
 creation_date: 2013-11-12T04:50:29Z
 
@@ -658,7 +658,7 @@ id: WBls:0000095
 name: middle embryo Bma
 def: "Proliferates from 100 cells to Lima bean stage." [WB:dr&mb]
 relationship: part_of WBls:0000092 ! embryo Bma
-relationship: preceded_by WBls:0000094 ! early embryo Bma
+relationship: starts_at_end_of WBls:0000094 ! early embryo Bma
 created_by: danielaraciti
 creation_date: 2013-11-12T04:59:19Z
 
@@ -667,7 +667,7 @@ id: WBls:0000096
 name: late embryo Bma
 def: "From Lima bean to hatching." [WB:dr&mb]
 relationship: part_of WBls:0000092 ! embryo Bma
-relationship: preceded_by WBls:0000095 ! middle embryo Bma
+relationship: starts_at_end_of WBls:0000095 ! middle embryo Bma
 created_by: danielaraciti
 creation_date: 2013-11-12T05:00:28Z
 
@@ -676,7 +676,7 @@ id: WBls:0000097
 name: larva Bma
 def: "From the time after hatch till becomes adult." [WB:dr]
 relationship: part_of WBls:0000093 ! postembryonic Bma
-relationship: preceded_by WBls:0000092 ! embryo Bma
+relationship: starts_at_end_of WBls:0000092 ! embryo Bma
 created_by: danielaraciti
 creation_date: 2013-11-12T05:12:19Z
 
@@ -704,7 +704,7 @@ id: WBls:0000100
 name: young adult Bma
 def: "The animals have a significant \"prepatent\" period in the host, where they have moulted to adults but not yet started producing eggs or sperm; this stage is usually-should be conditioned by days post infection, with day 26 to approximately day 60 being the \"young adult\" in most systems - but note that the speed of development is different in different host genotypes." [wb:dr&mb]
 relationship: part_of WBls:0000093 ! postembryonic Bma
-relationship: preceded_by WBls:0000082 ! L4 larva Bma
+relationship: starts_at_end_of WBls:0000082 ! L4 larva Bma
 created_by: danielaraciti
 creation_date: 2013-11-12T05:37:52Z
 
@@ -729,7 +729,7 @@ id: WBls:0000103
 name: postembryonic nematode
 def: "The stage after hatch till death." [wb:dr]
 is_a: WBls:0000101 ! all stages nematode
-relationship: preceded_by WBls:0000102 ! embryo nematode
+relationship: starts_at_end_of WBls:0000102 ! embryo nematode
 created_by: danielaraciti
 creation_date: 2013-11-25T06:14:39Z
 
@@ -738,7 +738,7 @@ id: WBls:0000104
 name: adult nematode
 def: "The stage after an animal is fully-developed and reaches maturity." [wb:dr]
 relationship: part_of WBls:0000103 ! postembryonic nematode
-relationship: preceded_by WBls:0000105 ! larva nematode
+relationship: starts_at_end_of WBls:0000105 ! larva nematode
 created_by: danielaraciti
 creation_date: 2013-11-25T06:18:53Z
 
@@ -755,7 +755,7 @@ id: WBls:0000106
 name: L1 larva nematode
 def: "The first stage larva." [wb:dr]
 relationship: part_of WBls:0000105 ! larva nematode
-relationship: preceded_by WBls:0000110 ! sheathed microfilaria nematode
+relationship: starts_at_end_of WBls:0000110 ! sheathed microfilaria nematode
 created_by: danielaraciti
 creation_date: 2013-11-25T06:20:28Z
 
@@ -764,7 +764,7 @@ id: WBls:0000107
 name: L2 larva nematode
 def: "The second stage larva." [wb:dr]
 relationship: part_of WBls:0000105 ! larva nematode
-relationship: preceded_by WBls:0000106 ! L1 larva nematode
+relationship: starts_at_end_of WBls:0000106 ! L1 larva nematode
 created_by: danielaraciti
 creation_date: 2013-11-25T06:20:54Z
 
@@ -773,7 +773,7 @@ id: WBls:0000108
 name: L3 larva nematode
 def: "The third stage larva." [wb:dr]
 relationship: part_of WBls:0000105 ! larva nematode
-relationship: preceded_by WBls:0000107 ! L2 larva nematode
+relationship: starts_at_end_of WBls:0000107 ! L2 larva nematode
 created_by: danielaraciti
 creation_date: 2013-11-25T06:21:33Z
 
@@ -782,7 +782,7 @@ id: WBls:0000109
 name: L4 larva nematode
 def: "The fourth stage larva." [wb:dr]
 relationship: part_of WBls:0000105 ! larva nematode
-relationship: preceded_by WBls:0000108 ! L3 larva nematode
+relationship: starts_at_end_of WBls:0000108 ! L3 larva nematode
 created_by: danielaraciti
 creation_date: 2013-11-25T06:22:48Z
 
@@ -799,7 +799,7 @@ id: WBls:0000111
 name: 16-18 days post-L4 adult hermaphrodite Ce
 def: "At 20 Centigrade: 16-18 days after L4-adult molt. 18-21 days after first cleavage." [wb:dr]
 relationship: part_of WBls:0000057 ! adult hermaphrodite Ce
-relationship: preceded_by WBls:0000074 ! 11-15 days post-L4 adult hermaphrodite Ce
+relationship: starts_at_end_of WBls:0000074 ! 11-15 days post-L4 adult hermaphrodite Ce
 created_by: danielaraciti
 
 [Typedef]
