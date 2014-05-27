@@ -483,7 +483,7 @@ is_a: WBls:0000038 ! L4 larva Ce
 
 [Term]
 id: WBls:0000074
-name: 11-15 days post-L4 adult hermaphrodite Ce
+name: 11-15 days post-L4 adult hermaphrodite
 def: "At 20 Centigrade: 11-15 days after L4-adult molt. 14-18 days after first cleavage." [wb:dr]
 relationship: part_of WBls:0000057 ! adult hermaphrodite Ce
 relationship: starts_at_end_of WBls:0000070 ! 7-10 days post-L4 adult hermaphrodite Ce
@@ -506,13 +506,20 @@ created_by: danielaraciti
 creation_date: 2012-05-30T09:23:44Z
 
 [Term]
-id: WBls:0000079
-name: L1 larva Bma
-alt_id: WBls:0000078
-def: "The first stage larva. Also known as vector-derived microfilaria. The microfilaria sheds the sheath and matures to a 'proper L1' in the bloodmeal in the vector gut, and then migrates to the muscles." [WB:dr&mb]
-synonym: "unsheathed microfilaria Bma" EXACT []
+id: WBls:0000078
+name: unsheathed microfilariae Bma
+def: "In the mosquito, the microfilariae shed sheaths, penetrate the midgut, and migrate to the thoracic muscles were the microfilariae increase in size, molt, and develop into infective larvae (L1 and L3) over a span of 7-21 days." [WB:dr&mb]
 relationship: part_of WBls:0000097 ! larva Bma
 relationship: starts_at_end_of WBls:0000077 ! sheathed microfilaria Bma
+created_by: danielaraciti
+creation_date: 2012-05-30T09:29:01Z
+
+[Term]
+id: WBls:0000079
+name: L1 larva Bma
+def: "The first stage larva." [WB:dr&mb]
+relationship: part_of WBls:0000097 ! larva Bma
+relationship: starts_at_end_of WBls:0000078 ! unsheathed microfilariae Bma
 created_by: danielaraciti
 creation_date: 2012-05-30T09:29:36Z
 
