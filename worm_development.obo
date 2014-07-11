@@ -825,3 +825,4 @@ is_transitive: true
 id: starts_at_end_of
 name: starts_at_end_of
 is_a: preceded_by ! preceded_by
+xref: RO:0002087 ! immediately_preceded_by
