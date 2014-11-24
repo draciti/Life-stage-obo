@@ -5777,6 +5777,21 @@ relationship: starts_at_end_of WBls:0000660 ! 549 min post first-cleavage Ce
 created_by: danielaraciti
 creation_date: 2014-04-25T09:29:36Z
 
+[Term]
+id: WBls:0000662
+name: immature microfilaria Bma
+relationship: part_of WBls:0000077 ! sheathed microfilaria Bma
+created_by: danielaraciti
+creation_date: 2014-11-10T09:29:36Z
+
+[Term]
+id: WBls:0000663
+name: mature microfilaria Bma
+relationship: part_of WBls:0000077 ! sheathed microfilaria Bma
+relationship: starts_at_end_of WBls:0000662 ! immature microfilaria Bma
+created_by: danielaraciti
+creation_date: 2014-11-10T09:29:36Z
+
 [Typedef]
 id: part_of
 name: part_of
