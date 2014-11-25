@@ -508,10 +508,9 @@ creation_date: 2012-05-30T09:04:28Z
 [Term]
 id: WBls:0000077
 name: sheathed microfilaria Bma
-def: "Microfilaria is the stage which develops from the egg and precedes the L1 stage. The larvae are surrounded by a membrane thought to be derived from the vitelline membrane." [wb:dr&mb]
-synonym: "microfilaria" EXACT []
+def: "Sheathed microfilaria larvae are surrounded by a membrane thought to be derived from the vitelline membrane." [wb:dr&mb]
 is_a: WBls:0000110 ! sheathed microfilaria nematode
-relationship: part_of WBls:0000097 ! larva Bma
+relationship: part_of WBls:0000665 ! microfilaria Bma
 created_by: danielaraciti
 creation_date: 2012-05-30T09:23:44Z
 
@@ -519,7 +518,7 @@ creation_date: 2012-05-30T09:23:44Z
 id: WBls:0000078
 name: unsheathed microfilariae Bma
 def: "In the mosquito, the microfilariae shed sheaths, penetrate the midgut, and migrate to the thoracic muscles were the microfilariae increase in size, molt, and develop into infective larvae (L1 and L3) over a span of 7-21 days." [WB:dr&mb]
-relationship: part_of WBls:0000097 ! larva Bma
+relationship: part_of WBls:0000665 ! microfilaria Bma
 relationship: starts_at_end_of WBls:0000077 ! sheathed microfilaria Bma
 created_by: danielaraciti
 creation_date: 2012-05-30T09:29:01Z
@@ -815,8 +814,8 @@ creation_date: 2013-11-25T06:22:48Z
 [Term]
 id: WBls:0000110
 name: sheathed microfilaria nematode
-def: "Microfilaria is the stage which develops from the egg and precedes the L1 stage. The larvae are surrounded by a membrane thought to be derived from the vitelline membrane." [wb:dr]
-relationship: part_of WBls:0000105 ! larva nematode
+def: "Sheathed microfilaria larvae are surrounded by a membrane thought to be derived from the vitelline membrane." [wb:dr]
+relationship: part_of WBls:0000664 ! microfilaria nematode
 created_by: danielaraciti
 creation_date: 2013-11-25T06:23:23Z
 
@@ -5791,6 +5790,47 @@ relationship: part_of WBls:0000077 ! sheathed microfilaria Bma
 relationship: starts_at_end_of WBls:0000662 ! immature microfilaria Bma
 created_by: danielaraciti
 creation_date: 2014-11-10T09:29:36Z
+
+[Term]
+id: WBls:0000664
+name: microfilaria nematode
+def: "The microfilaria is an early stage in the life cycle of certain parasitic nematodes in the family Onchocercidae. Microfilaria is the stage which develops from the egg and precedes the L1 stage." [wb:dr]
+comment: Anderson, R.C. (2000) Nematode Parasites of Vertebrates: Their Development and Transmission. Second Edition. CABI Publishing: Wallingford, England, pp. 472-475.
+relationship: part_of WBls:0000105 ! larva nematode
+created_by: danielaraciti
+creation_date: 2014-11-25T09:23:44Z
+
+[Term]
+id: WBls:0000665
+name: microfilaria Bma
+def: "Microfilaria is the stage which develops from the egg and precedes the L1 stage." [wb:dr&mb]
+is_a: WBls:0000664 ! microfilaria nematode
+relationship: part_of WBls:0000097 ! larva Bma
+created_by: danielaraciti
+creation_date: 2014-11-25T09:25:34Z
+
+[Term]
+id: WBls:0000666
+name: unsheathed microfilariae nematode
+def: "The microfilariae shed sheaths and develop into infective larvae." [WB:dr]
+relationship: part_of WBls:0000664 ! microfilaria nematode
+relationship: starts_at_end_of WBls:0000110 ! sheathed microfilaria nematode
+created_by: danielaraciti
+creation_date: 2014-11-25T09:50:35Z
+
+[Term]
+id: WBls: 0000667
+name: nodular microfilariae nematode
+relationship: part_of WBls:0000666 ! unsheathed microfilariae nematode
+created_by: danielaraciti
+creation_date: 2014-11-25T09:52:54Z
+
+[Term]
+id: WBls: 0000668
+name: skin microfilariae nematode
+relationship: part_of WBls:0000666 ! unsheathed microfilariae nematode
+created_by: danielaraciti
+creation_date: 2014-11-25T09:52:54Z
 
 [Typedef]
 id: part_of
