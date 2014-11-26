@@ -51,7 +51,9 @@ relationship: part_of WBls:0000004 ! proliferating embryo Ce
 id: WBls:0000006
 name: 1-cell embryo Ce
 def: "Also called zygote. -50min till 0min of first cleavage at 20 Centigrade. Contains 1 cell." [wb:wjc]
+synonym: "fertilized egg" EXACT [wb:dr]
 relationship: part_of WBls:0000005 ! blastula embryo Ce
+relationship: starts_at_end_of WBls:0000669 ! unfertilized egg Ce
 
 [Term]
 id: WBls:0000007
@@ -5832,6 +5834,27 @@ relationship: starts_at_end_of WBls:0000102 ! embryo nematode
 relationship: starts_at_end_of WBls:0000110 ! sheathed microfilaria nematode
 created_by: danielaraciti
 creation_date: 2014-11-25T09:50:35Z
+
+[Term]
+id: WBls:0000667
+name: nodular microfilariae nematode
+relationship: part_of WBls:0000666 ! unsheathed microfilariae nematode
+created_by: danielaraciti
+creation_date: 2014-11-25T09:52:54Z
+
+[Term]
+id: WBls:0000668
+name: skin microfilariae nematode
+relationship: part_of WBls:0000666 ! unsheathed microfilariae nematode
+created_by: danielaraciti
+creation_date: 2014-11-25T09:52:54Z
+
+[Term]
+id: WBls:0000669
+name: unfertilized egg Ce
+relationship: part_of WBls:0000002 ! all stages Ce
+created_by: danielaraciti
+creation_date: 2014-11-26T11:49:22Z
 
 [Typedef]
 id: part_of
