@@ -1,11 +1,25 @@
 format-version: 1.2
-date: 03:10:2014 11:55
+date: 26:11:2014 11:25
 saved-by: danielaraciti
 auto-generated-by: OBO-Edit 2.2-rc1
 default-namespace: worm_development
 remark: Version: 1.04
 remark: Editors: Wen J. Chen & Daniela Raciti, WormBase, Caltech
 ontology: wbls
+
+[Term]
+id: WBls: 0000667
+name: nodular microfilaria nematode
+relationship: part_of WBls:0000666 ! unsheathed microfilaria nematode
+created_by: danielaraciti
+creation_date: 2014-11-25T09:52:54Z
+
+[Term]
+id: WBls: 0000668
+name: skin microfilaria nematode
+relationship: part_of WBls:0000666 ! unsheathed microfilaria nematode
+created_by: danielaraciti
+creation_date: 2014-11-25T09:52:54Z
 
 [Term]
 id: WBls:0000002
@@ -5813,25 +5827,11 @@ creation_date: 2014-11-25T09:25:34Z
 [Term]
 id: WBls:0000666
 name: unsheathed microfilaria nematode
-def: "The microfilariae shed sheaths and develop into infective larvae." [WB:dr]
 relationship: part_of WBls:0000664 ! microfilaria nematode
+relationship: starts_at_end_of WBls:0000102 ! embryo nematode
 relationship: starts_at_end_of WBls:0000110 ! sheathed microfilaria nematode
 created_by: danielaraciti
 creation_date: 2014-11-25T09:50:35Z
-
-[Term]
-id: WBls: 0000667
-name: nodular microfilaria nematode
-relationship: part_of WBls:0000666 ! unsheathed microfilaria nematode
-created_by: danielaraciti
-creation_date: 2014-11-25T09:52:54Z
-
-[Term]
-id: WBls: 0000668
-name: skin microfilaria nematode
-relationship: part_of WBls:0000666 ! unsheathed microfilaria nematode
-created_by: danielaraciti
-creation_date: 2014-11-25T09:52:54Z
 
 [Typedef]
 id: part_of
