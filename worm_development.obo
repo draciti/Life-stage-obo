@@ -8,20 +8,6 @@ remark: Editors: Wen J. Chen & Daniela Raciti, WormBase, Caltech
 ontology: wbls
 
 [Term]
-id: WBls: 0000667
-name: nodular microfilaria nematode
-relationship: part_of WBls:0000666 ! unsheathed microfilaria nematode
-created_by: danielaraciti
-creation_date: 2014-11-25T09:52:54Z
-
-[Term]
-id: WBls: 0000668
-name: skin microfilaria nematode
-relationship: part_of WBls:0000666 ! unsheathed microfilaria nematode
-created_by: danielaraciti
-creation_date: 2014-11-25T09:52:54Z
-
-[Term]
 id: WBls:0000002
 name: all stages Ce
 def: "All C. elegans development stages, including embryo, larva and adult stage." [wb:wjc]
@@ -296,7 +282,6 @@ id: WBls:0000040
 name: L4-adult molt Ce
 def: "The stage when an animal shifts from L4 larva to adult. It includes the synthesis of new cuticle, cease of phrayngeal pumping during a lethargus stage, and the shed off of old cuticle." [wb:wjc]
 relationship: part_of WBls:0000023 ! larva Ce
-relationship: starts_at_end_of WBls:0000038 ! L4 larva Ce
 
 [Term]
 id: WBls:0000041
