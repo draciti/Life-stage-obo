@@ -1,18 +1,26 @@
 format-version: 1.2
-date: 26:11:2014 14:49
-saved-by: danielaraciti
-auto-generated-by: OBO-Edit 2.2-rc1
+date: 23:03:2015 13:54
+saved-by: jl16
+auto-generated-by: OBO-Edit 2.3.1
 default-namespace: worm_development
 remark: Version: 1.04
 remark: Editors: Wen J. Chen & Daniela Raciti, WormBase, Caltech
 ontology: wbls
 
 [Term]
+id: WBls:0000001
+name: free-living nematode stage
+def: "The nematode life-cycle stage that occurs entirely outside of a host organism." [wb:jl]
+is_a: WBls:0000101 ! all stages nematode
+created_by: jl16
+creation_date: 2015-03-19T10:42:18Z
+
+[Term]
 id: WBls:0000002
 name: all stages Ce
 def: "All C. elegans development stages, including embryo, larva and adult stage." [wb:wjc]
+is_a: WBls:0000001 ! free-living nematode stage
 is_a: WBls:0000075 ! Nematoda Life Stage
-is_a: WBls:0000101 ! all stages nematode
 
 [Term]
 id: WBls:0000003
@@ -286,7 +294,7 @@ relationship: part_of WBls:0000023 ! larva Ce
 [Term]
 id: WBls:0000041
 name: adult Ce
-def: "The stage after an animal is fully-developed and reaches maturity." [wb:wjc]
+def: "The stage that begins when a C.elegans individual is fully-developed and has reached maturity." [wb:wjc]
 is_a: WBls:0000104 ! adult nematode
 relationship: part_of WBls:0000022 ! postembryonic Ce
 relationship: preceded_by WBls:0000038 ! L4 larva Ce
@@ -400,6 +408,14 @@ def: "Very young adult hermaphrodites that do not have eggs in the uterus yet. A
 relationship: part_of WBls:0000057 ! adult hermaphrodite Ce
 
 [Term]
+id: WBls:0000059
+name: parasitic nematode stage
+def: "The nematode life-cycle stage that occurs entirely or partially within a host or vector organism." [wb:jl]
+is_a: WBls:0000101 ! all stages nematode
+created_by: jl16
+creation_date: 2015-03-19T10:44:40Z
+
+[Term]
 id: WBls:0000060
 name: reproductive stage adult hermaphrodite Ce
 def: "Adult hermaphrodites continuously laying fertilized eggs. Hermaphrodite in egg laying stages--usually up to 4/5 days after L4-adult molt at Centigrade. From the first fertilized egg is laid, till all sperms are used. At 20 Centigrade: 13 hours after L4-adult molt until about 5.4 days after the L4-adult molt. 3-8.4 days after first cleavage." [wb:wjc]
@@ -508,6 +524,14 @@ created_by: danielaraciti
 creation_date: 2012-05-30T09:04:28Z
 
 [Term]
+id: WBls:0000076
+name: all stages Strongyloides
+def: "All Strongyloides development stages, including free-living and parasitic stages." [wb:jl]
+is_a: WBls:0000075 ! Nematoda Life Stage
+created_by: jl16
+creation_date: 2015-03-19T10:49:23Z
+
+[Term]
 id: WBls:0000077
 name: sheathed microfilaria Bma
 def: "Sheathed microfilaria larvae are surrounded by a membrane thought to be derived from the vitelline membrane." [wb:dr&mb]
@@ -569,7 +593,7 @@ creation_date: 2012-05-30T09:31:38Z
 [Term]
 id: WBls:0000083
 name: adult Bma
-def: "Adults (or at least adult females) can live for 10 years in a human host, and can outlive their rodent laboratory hosts; it is usual to state the chronological age of the nematodes in days or months post-infection, and occasionally post-patency (the production of first microfilariae)." [WB:dr&mb]
+def: "The stage that begins when a B. malayi individual is fully-developed and has reached maturity. Adult B. malayi (or at least adult females) can live for 10 years in a human host, and can outlive their rodent laboratory hosts; it is usual to state the chronological age of the nematodes in days or months post-infection, and occasionally post-patency (the production of first microfilariae)." [WB:dr&mb]
 is_a: WBls:0000104 ! adult nematode
 relationship: part_of WBls:0000093 ! postembryonic Bma
 relationship: starts_at_end_of WBls:0000100 ! young adult Bma
@@ -648,8 +672,8 @@ creation_date: 2012-10-16T15:37:30Z
 id: WBls:0000091
 name: all stages Bma
 def: "All B. malayi developmental stages, including embryo, larva and adult stage." [wb:dr&mb]
+is_a: WBls:0000059 ! parasitic nematode stage
 is_a: WBls:0000075 ! Nematoda Life Stage
-is_a: WBls:0000101 ! all stages nematode
 created_by: danielaraciti
 creation_date: 2013-11-12T03:18:57Z
 
@@ -714,6 +738,7 @@ name: vector-derived L3 Bma
 def: "Also known as infective L3, or iL3; i.e. isolated from the vector salivary glands; these samples may-should be conditioned by age, which is usually counted in days from the blood meal." [wb:dr&mb]
 synonym: "iL3" RELATED []
 synonym: "infective L3" RELATED []
+is_a: WBls:0000679 ! infective stage larva
 relationship: part_of WBls:0000081 ! L3 larva Bma
 created_by: danielaraciti
 creation_date: 2013-11-12T05:23:54Z
@@ -764,8 +789,8 @@ creation_date: 2013-11-25T06:14:39Z
 [Term]
 id: WBls:0000104
 name: adult nematode
-def: "The stage after an animal is fully-developed and reaches maturity." [wb:dr]
-relationship: part_of WBls:0000103 ! postembryonic nematode
+def: "The stage that begins when an animal is fully-developed and has reached maturity." [wb:dr]
+is_a: WBls:0000103 ! postembryonic nematode
 relationship: starts_at_end_of WBls:0000105 ! larva nematode
 created_by: danielaraciti
 creation_date: 2013-11-25T06:18:53Z
@@ -773,8 +798,8 @@ creation_date: 2013-11-25T06:18:53Z
 [Term]
 id: WBls:0000105
 name: larva nematode
-def: "From the time after hatch till becomes adult." [wb:dr]
-relationship: part_of WBls:0000103 ! postembryonic nematode
+def: "The stage that begins after hatching and ends when the nematode becomes adult." [wb:dr]
+is_a: WBls:0000103 ! postembryonic nematode
 created_by: danielaraciti
 creation_date: 2013-11-25T06:19:27Z
 
@@ -5891,6 +5916,65 @@ name: 20-days post-L4 adult hermaphrodite Ce
 def: "At 20 Centigrade: 20-21 days after L4-adult molt. 23-24 days after first cleavage." [wb:dr]
 relationship: part_of WBls:0000057 ! adult hermaphrodite Ce
 relationship: preceded_by WBls:0000111 ! 16-18 days post-L4 adult hermaphrodite Ce
+
+[Term]
+id: WBls:0000677
+name: Strongyloides free-living stage
+def: "The stage of the Strongyloides life-cycle that occurs entirely outside of a host or vector organism." [wb:jl]
+is_a: WBls:0000001 ! free-living nematode stage
+is_a: WBls:0000076 ! all stages Strongyloides
+created_by: jl16
+creation_date: 2015-03-19T10:51:48Z
+
+[Term]
+id: WBls:0000678
+name: Strongyloides parasitic stage
+def: "The stage of the Strongyloides life-cycle that occurs entirely or partially inside a host or vector organism." [wb:jl]
+is_a: WBls:0000059 ! parasitic nematode stage
+is_a: WBls:0000076 ! all stages Strongyloides
+created_by: jl16
+creation_date: 2015-03-19T10:52:41Z
+
+[Term]
+id: WBls:0000679
+name: infective stage larva
+def: "Larval stage that is capable of infecting a host organism." [wb:jl]
+comment: Host organism here refers to the main host organism rather than intermediate hosts.
+is_a: WBls:0000105 ! larva nematode
+created_by: jl16
+creation_date: 2015-03-19T11:21:35Z
+
+[Term]
+id: WBls:0000680
+name: Strongyloides infective L3
+def: "Strongyloides infective stage L3 larval stage. This stage can develop as a part of a of free-living life-cycle, or from a parasitic, parthenogenic female stage." [wb:jl]
+synonym: "Strongyloides iL3" EXACT []
+synonym: "Strongyloides infective stage larva" EXACT []
+is_a: WBls:0000108 ! L3 larva nematode
+is_a: WBls:0000678 ! Strongyloides parasitic stage
+is_a: WBls:0000679 ! infective stage larva
+created_by: jl16
+creation_date: 2015-03-19T11:27:15Z
+
+[Term]
+id: WBls:0000681
+name: Strongyloides parasitic female
+def: "The Strongyloides life-cycle stage in which a female adult worm produces larval progeny parthenogenetically within the host organism." [wb:jl]
+synonym: "Strongyloides L5" EXACT []
+is_a: WBls:0000104 ! adult nematode
+is_a: WBls:0000678 ! Strongyloides parasitic stage
+created_by: jl16
+creation_date: 2015-03-19T11:36:03Z
+
+[Term]
+id: WBls:0000682
+name: Strongyloides free-living adult
+def: "The Strongyloides life-cycle stage in which male and female adult worms reproduce sexually and live entirely outside a host organism." [wb:jl]
+synonym: "Strongyloides free-living L5" EXACT []
+is_a: WBls:0000104 ! adult nematode
+is_a: WBls:0000677 ! Strongyloides free-living stage
+created_by: jl16
+creation_date: 2015-03-19T11:48:09Z
 
 [Typedef]
 id: part_of
