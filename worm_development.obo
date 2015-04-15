@@ -21,6 +21,7 @@ name: all stages Ce
 def: "All C. elegans development stages, including embryo, larva and adult stage." [wb:wjc]
 is_a: WBls:0000001 ! free-living nematode stage
 is_a: WBls:0000075 ! Nematoda Life Stage
+is_a: WBls:0000101 ! all stages nematode
 
 [Term]
 id: WBls:0000003
@@ -528,6 +529,7 @@ id: WBls:0000076
 name: all stages Strongyloides
 def: "All Strongyloides development stages, including free-living and parasitic stages." [wb:jl]
 is_a: WBls:0000075 ! Nematoda Life Stage
+is_a: WBls:0000101 ! all stages nematode
 created_by: jl16
 creation_date: 2015-03-19T10:49:23Z
 
@@ -674,6 +676,7 @@ name: all stages Bma
 def: "All B. malayi developmental stages, including embryo, larva and adult stage." [wb:dr&mb]
 is_a: WBls:0000059 ! parasitic nematode stage
 is_a: WBls:0000075 ! Nematoda Life Stage
+is_a: WBls:0000101 ! all stages nematode
 created_by: danielaraciti
 creation_date: 2013-11-12T03:18:57Z
 
