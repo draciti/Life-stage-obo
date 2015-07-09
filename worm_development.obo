@@ -5984,7 +5984,7 @@ creation_date: 2015-03-19T11:48:09Z
 [Term]
 id: WBls:0000683
 name: L4.0 larva Ce
-def: "The first sub-stage of the L4 larva. All vulval cells are migrating toward the center of the future vulva. vulA, vulB, and vulE have divided, but vulC and vulF have not. At 20 Centigrade: 34.3 hours after hatching, 0.3 hours from the L3-to-L4 molt." [wb:dr]
+def: "The first sub-stage of the L4 larva. All vulval cells are migrating toward the center of the future vulva. vulA, vulB, and vulE have divided, but vulC and vulF have not. At 20 Centigrade: 34.3 hours after hatching, 0.3 hours from the L3-to-L4 molt." [wb:dr, WB:WBPaper00046933]
 relationship: part_of WBls:0000038 ! L4 larva Ce
 relationship: starts_at_end_of WBls:0000037 ! L3-L4 molt Ce
 created_by: danielaraciti
@@ -5993,7 +5993,7 @@ creation_date: 2015-06-03T09:03:09Z
 [Term]
 id: WBls:0000684
 name: L4.1 larva Ce
-def: "The second sub-stage of the L4 larva. The inner cells of the vulva have finished migrating and have formed toroids, but have not fused. vulC and vulF have divided and a narrow lumen has formed. At 20 Centigrade: 35.1 hours after hatching, 1.1 hours from the L3-to-L4 molt." [wb:dr]
+def: "The second sub-stage of the L4 larva. The inner cells of the vulva have finished migrating and have formed toroids, but have not fused. vulC and vulF have divided and a narrow lumen has formed. At 20 Centigrade: 35.1 hours after hatching, 1.1 hours from the L3-to-L4 molt." [wb:dr, WB:WBPaper00046933]
 relationship: part_of WBls:0000038 ! L4 larva Ce
 relationship: starts_at_end_of WBls:0000683 ! L4.0 larva Ce
 created_by: danielaraciti
@@ -6002,7 +6002,7 @@ creation_date: 2015-06-03T09:06:19Z
 [Term]
 id: WBls:0000685
 name: L4.2 larva Ce
-def: "The third sub-stage of the L4 larva. All vulval cells complete migration. vulA, vulC, and vulD undergo cell fusion. The vulval lumen has widened and a prominent kink has formed between vulC and vulD. The uterine lumen has not started to form. At 20 Centigrade: 36.8 hours after hatching, 2.8 hours from the L3-to-L4 molt." [wb:dr]
+def: "The third sub-stage of the L4 larva. All vulval cells complete migration. vulA, vulC, and vulD undergo cell fusion. The vulval lumen has widened and a prominent kink has formed between vulC and vulD. The uterine lumen has not started to form. At 20 Centigrade: 36.8 hours after hatching, 2.8 hours from the L3-to-L4 molt." [wb:dr, WB:WBPaper00046933]
 relationship: part_of WBls:0000038 ! L4 larva Ce
 relationship: starts_at_end_of WBls:0000684 ! L4.1 larva Ce
 created_by: danielaraciti
@@ -6011,7 +6011,7 @@ creation_date: 2015-06-03T09:09:03Z
 [Term]
 id: WBls:0000686
 name: L4.3 larva Ce
-def: "The fourth sub-stage of the L4 larva. vulFs have separated and the apex of the lumen is flat and capped by the anchor cell. The uterine lumen starts to form. At 20 Centigrade: 38.1 hours after hatching, 4.1 hours from the L3-to-L4 molt." [wb:dr]
+def: "The fourth sub-stage of the L4 larva. vulFs have separated and the apex of the lumen is flat and capped by the anchor cell. The uterine lumen starts to form. At 20 Centigrade: 38.1 hours after hatching, 4.1 hours from the L3-to-L4 molt." [wb:dr, WB:WBPaper00046933]
 relationship: part_of WBls:0000038 ! L4 larva Ce
 relationship: starts_at_end_of WBls:0000685 ! L4.2 larva Ce
 created_by: danielaraciti
@@ -6020,7 +6020,7 @@ creation_date: 2015-06-03T09:10:09Z
 [Term]
 id: WBls:0000687
 name: L4.4 larva Ce
-def: "The fifth sub-stage of the L4 larva. utse is visible as a thin layer separating the vulval and uterine lumens. 'Fingers' are formed at the sides of the vulva next to vulB1 and vulB2. The uterine lumen is fully distended. At 20 Centigrade: 39.0 hours after hatching, 5.0 hours from the L3-to-L4 molt." [wb:dr]
+def: "The fifth sub-stage of the L4 larva. utse is visible as a thin layer separating the vulval and uterine lumens. 'Fingers' are formed at the sides of the vulva next to vulB1 and vulB2. The uterine lumen is fully distended. At 20 Centigrade: 39.0 hours after hatching, 5.0 hours from the L3-to-L4 molt." [wb:dr, WB:WBPaper00046933]
 relationship: part_of WBls:0000038 ! L4 larva Ce
 relationship: starts_at_end_of WBls:0000686 ! L4.3 larva Ce
 created_by: danielaraciti
@@ -6029,7 +6029,7 @@ creation_date: 2015-06-03T09:11:12Z
 [Term]
 id: WBls:0000688
 name: L4.5 larva Ce
-def: "The sixth sub-stage of the L4 larva. The side of the vulval lumen between vulC and vulD forms a smooth curve. At 20 Centigrade: 40.4 hours after hatching, 6.4 hours from the L3-to-L4 molt." [wb:dr]
+def: "The sixth sub-stage of the L4 larva. The side of the vulval lumen between vulC and vulD forms a smooth curve. At 20 Centigrade: 40.4 hours after hatching, 6.4 hours from the L3-to-L4 molt." [wb:dr, WB:WBPaper00046933]
 relationship: part_of WBls:0000038 ! L4 larva Ce
 relationship: starts_at_end_of WBls:0000687 ! L4.4 larva Ce
 created_by: danielaraciti
@@ -6038,7 +6038,7 @@ creation_date: 2015-06-03T09:13:09Z
 [Term]
 id: WBls:0000689
 name: L4.6 larva Ce
-def: "The seventh sub-stage of the L4 larva. 'Fingers' between vulB2 and vulC are pointed ventrally. At 20 Centigrade: 41.5 hours after hatching, 7.5 hours from the L3-to-L4 molt." [wb:dr]
+def: "The seventh sub-stage of the L4 larva. 'Fingers' between vulB2 and vulC are pointed ventrally. At 20 Centigrade: 41.5 hours after hatching, 7.5 hours from the L3-to-L4 molt." [wb:dr, WB:WBPaper00046933]
 relationship: part_of WBls:0000038 ! L4 larva Ce
 relationship: starts_at_end_of WBls:0000688 ! L4.5 larva Ce
 created_by: danielaraciti
@@ -6047,7 +6047,7 @@ creation_date: 2015-06-03T09:15:18Z
 [Term]
 id: WBls:0000690
 name: L4.7 larva Ce
-def: "The eighth sub-stage of the L4 larva. vulFs have migrated closer such that the lumen is narrowed in the dorsal section. The approximate cutoff is when the width of the channel is less than the width of the vulD nucleus. At 20 Centigrade: 42.3 hours after hatching, 8.3 hours from the L3-to-L4 molt." [wb:dr]
+def: "The eighth sub-stage of the L4 larva. vulFs have migrated closer such that the lumen is narrowed in the dorsal section. The approximate cutoff is when the width of the channel is less than the width of the vulD nucleus. At 20 Centigrade: 42.3 hours after hatching, 8.3 hours from the L3-to-L4 molt." [wb:dr, WB:WBPaper00046933]
 relationship: part_of WBls:0000038 ! L4 larva Ce
 relationship: starts_at_end_of WBls:0000689 ! L4.6 larva Ce
 created_by: danielaraciti
@@ -6056,7 +6056,7 @@ creation_date: 2015-06-03T09:16:07Z
 [Term]
 id: WBls:0000691
 name: L4.8 larva Ce
-def: "The ninth sub-stage of the L4 larva. The vulval lumen is partially collapsed. At 20 Centigrade: 42.5 hours after hatching, 8.5 hours from the L3-to-L4 molt." [wb:dr]
+def: "The ninth sub-stage of the L4 larva. The vulval lumen is partially collapsed. At 20 Centigrade: 42.5 hours after hatching, 8.5 hours from the L3-to-L4 molt." [wb:dr, WB:WBPaper00046933]
 relationship: part_of WBls:0000038 ! L4 larva Ce
 relationship: starts_at_end_of WBls:0000690 ! L4.7 larva Ce
 created_by: danielaraciti
@@ -6065,7 +6065,7 @@ creation_date: 2015-06-03T09:18:02Z
 [Term]
 id: WBls:0000692
 name: L4.9 larva Ce
-def: "The tenth sub-stage of the L4 larva. The vulval lumen is completely collapsed. At 20 Centigrade: 42.8 hours after hatching, 8.8 hours from the L3-to-L4 molt." [wb:dr]
+def: "The tenth sub-stage of the L4 larva. The vulval lumen is completely collapsed. At 20 Centigrade: 42.8 hours after hatching, 8.8 hours from the L3-to-L4 molt." [wb:dr, WB:WBPaper00046933]
 relationship: part_of WBls:0000038 ! L4 larva Ce
 relationship: starts_at_end_of WBls:0000691 ! L4.8 larva Ce
 created_by: danielaraciti
