@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 03:06:2015 10:02
+date: 06:10:2015 12:12
 saved-by: danielaraciti
 auto-generated-by: OBO-Edit 2.2-rc1
 default-namespace: worm_development
@@ -6070,6 +6070,105 @@ relationship: part_of WBls:0000038 ! L4 larva Ce
 relationship: starts_at_end_of WBls:0000691 ! L4.8 larva Ce
 created_by: danielaraciti
 creation_date: 2015-06-03T09:20:37Z
+
+[Term]
+id: WBls:0000693
+name: 560 min post first-cleavage Ce
+def: "The time period encompassing the 560th minute post first cleavage at 20 Centigrade with respect to Sulston's lineage tree." [WB:WBPaper00000653, WB:WBPaper00046121]
+relationship: part_of WBls:0000020 ! 3-fold embryo Ce
+relationship: preceded_by WBls:0000661 ! 550 min post first-cleavage Ce
+created_by: danielaraciti
+creation_date: 2015-10-06T09:27:59Z
+
+[Term]
+id: WBls:0000694
+name: 570 min post first-cleavage Ce
+def: "The time period encompassing the 570th minute post first cleavage at 20 Centigrade with respect to Sulston's lineage tree." [WB:WBPaper00000653, WB:WBPaper00046121]
+relationship: part_of WBls:0000020 ! 3-fold embryo Ce
+relationship: preceded_by WBls:0000693 ! 560 min post first-cleavage Ce
+created_by: danielaraciti
+creation_date: 2015-10-06T10:07:46Z
+
+[Term]
+id: WBls:0000695
+name: 640 min post first-cleavage Ce
+def: "The time period encompassing the 640th minute post first cleavage at 20 Centigrade with respect to Sulston's lineage tree." [WB:WBPaper00000653, WB:WBPaper00046121]
+relationship: part_of WBls:0000021 ! fully-elongated embryo Ce
+relationship: preceded_by WBls:0000694 ! 570 min post first-cleavage Ce
+created_by: danielaraciti
+creation_date: 2015-10-06T11:08:29Z
+
+[Term]
+id: WBls:0000696
+name: 650 min post first-cleavage Ce
+def: "The time period encompassing the 650th minute post first cleavage at 20 Centigrade with respect to Sulston's lineage tree." [WB:WBPaper00000653, WB:WBPaper00046121]
+relationship: part_of WBls:0000021 ! fully-elongated embryo Ce
+relationship: preceded_by WBls:0000695 ! 640 min post first-cleavage Ce
+created_by: danielaraciti
+creation_date: 2015-10-06T11:11:15Z
+
+[Term]
+id: WBls:0000697
+name: 660 min post first-cleavage Ce
+def: "The time period encompassing the 660th minute post first cleavage at 20 Centigrade with respect to Sulston's lineage tree." [WB:WBPaper00000653, WB:WBPaper00046121]
+relationship: part_of WBls:0000021 ! fully-elongated embryo Ce
+relationship: preceded_by WBls:0000696 ! 650 min post first-cleavage Ce
+created_by: danielaraciti
+creation_date: 2015-10-06T11:13:05Z
+
+[Term]
+id: WBls:0000698
+name: 720 min post first-cleavage Ce
+def: "The time period encompassing the 720th minute post first cleavage at 20 Centigrade with respect to Sulston's lineage tree." [WB:WBPaper00000653, WB:WBPaper00046121]
+relationship: part_of WBls:0000021 ! fully-elongated embryo Ce
+relationship: preceded_by WBls:0000697 ! 660 min post first-cleavage Ce
+created_by: danielaraciti
+creation_date: 2015-10-06T11:16:33Z
+
+[Term]
+id: WBls:0000699
+name: 770 min post first-cleavage Ce
+def: "The time period encompassing the 770th minute post first cleavage at 20 Centigrade with respect to Sulston's lineage tree." [WB:WBPaper00000653, WB:WBPaper00046121]
+relationship: part_of WBls:0000021 ! fully-elongated embryo Ce
+relationship: preceded_by WBls:0000698 ! 720 min post first-cleavage Ce
+created_by: danielaraciti
+creation_date: 2015-10-06T11:18:49Z
+
+[Term]
+id: WBls:0000700
+name: 780 min post first-cleavage Ce
+def: "The time period encompassing the 780th minute post first cleavage at 20 Centigrade with respect to Sulston's lineage tree." [WB:WBPaper00000653, WB:WBPaper00046121]
+relationship: part_of WBls:0000021 ! fully-elongated embryo Ce
+relationship: preceded_by WBls:0000699 ! 770 min post first-cleavage Ce
+created_by: danielaraciti
+creation_date: 2015-10-06T11:23:34Z
+
+[Term]
+id: WBls:0000701
+name: 820 min post first-cleavage Ce
+def: "The time period encompassing the 820th minute post first cleavage at 20 Centigrade with respect to Sulston's lineage tree." [WB:WBPaper00000653, WB:WBPaper00046121]
+relationship: part_of WBls:0000024 ! L1 larva Ce
+relationship: preceded_by WBls:0000700 ! 780 min post first-cleavage Ce
+created_by: danielaraciti
+creation_date: 2015-10-06T11:25:47Z
+
+[Term]
+id: WBls:0000702
+name: 830 min post first-cleavage Ce
+def: "The time period encompassing the 830th minute post first cleavage at 20 Centigrade with respect to Sulston's lineage tree." [WB:WBPaper00000653, WB:WBPaper00046121]
+relationship: part_of WBls:0000024 ! L1 larva Ce
+relationship: preceded_by WBls:0000701 ! 820 min post first-cleavage Ce
+created_by: danielaraciti
+creation_date: 2015-10-06T11:28:41Z
+
+[Term]
+id: WBls:0000703
+name: 850 min post first-cleavage Ce
+def: "The time period encompassing the 850th minute post first cleavage at 20 Centigrade with respect to Sulston's lineage tree." [WB:WBPaper00000653, WB:WBPaper00046121]
+relationship: part_of WBls:0000024 ! L1 larva Ce
+relationship: preceded_by WBls:0000702 ! 830 min post first-cleavage Ce
+created_by: danielaraciti
+creation_date: 2015-10-06T11:30:33Z
 
 [Typedef]
 id: part_of
