@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 25:11:2015 12:05
+date: 16:03:2016 10:47
 saved-by: jl16
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: worm_development
@@ -11,7 +11,7 @@ ontology: wbls
 id: WBls:0000001
 name: free-living nematode stage
 def: "The nematode life-cycle stage that occurs entirely outside of a host organism." [WB:jl]
-is_a: WBls:0000101 ! all stages nematode
+is_a: WBls:0000101 ! nematode life stage
 created_by: jl16
 creation_date: 2015-03-19T10:42:18Z
 
@@ -20,7 +20,7 @@ id: WBls:0000002
 name: all stages Ce
 def: "All C. elegans development stages, including embryo, larva and adult stage." [WB:wjc]
 is_a: WBls:0000001 ! free-living nematode stage
-is_a: WBls:0000101 ! all stages nematode
+is_a: WBls:0000101 ! nematode life stage
 
 [Term]
 id: WBls:0000003
@@ -416,7 +416,7 @@ relationship: part_of WBls:0000057 ! adult hermaphrodite Ce
 id: WBls:0000059
 name: parasitic nematode stage
 def: "The nematode life-cycle stage that occurs entirely or partially within a host or vector organism." [WB:jl]
-is_a: WBls:0000101 ! all stages nematode
+is_a: WBls:0000101 ! nematode life stage
 created_by: jl16
 creation_date: 2015-03-19T10:44:40Z
 
@@ -532,7 +532,7 @@ creation_date: 2012-05-30T09:04:28Z
 id: WBls:0000076
 name: all stages Strongyloides
 def: "All Strongyloides development stages, including free-living and parasitic stages." [WB:jl]
-is_a: WBls:0000101 ! all stages nematode
+is_a: WBls:0000101 ! nematode life stage
 created_by: jl16
 creation_date: 2015-03-19T10:49:23Z
 
@@ -678,7 +678,7 @@ id: WBls:0000091
 name: all stages Bma
 def: "All B. malayi developmental stages, including embryo, larva and adult stage." [WB:dr, WB:mb]
 is_a: WBls:0000059 ! parasitic nematode stage
-is_a: WBls:0000101 ! all stages nematode
+is_a: WBls:0000101 ! nematode life stage
 created_by: danielaraciti
 creation_date: 2013-11-12T03:18:57Z
 
@@ -768,8 +768,9 @@ creation_date: 2013-11-12T05:37:52Z
 
 [Term]
 id: WBls:0000101
-name: all stages nematode
-def: "All developmental stages, including embryo, larva and adult stage." [WB:dr]
+name: nematode life stage
+def: "Any developmental stage in a nematode, including embryo, larva and adult stage." [WB:dr, WB:jl]
+synonym: "all stages nematode" EXACT []
 is_a: WBls:0000075 ! Nematoda Life Stage
 created_by: danielaraciti
 creation_date: 2013-11-25T06:13:37Z
@@ -779,7 +780,7 @@ id: WBls:0000102
 name: embryo nematode
 def: "The whole period of embryogenesis, from the formation of an egg till its hatch." [WB:dr]
 synonym: "nematode egg stage" EXACT []
-is_a: WBls:0000101 ! all stages nematode
+is_a: WBls:0000101 ! nematode life stage
 created_by: danielaraciti
 creation_date: 2013-11-25T06:14:14Z
 
@@ -787,7 +788,7 @@ creation_date: 2013-11-25T06:14:14Z
 id: WBls:0000103
 name: postembryonic nematode
 def: "The stage after hatch till death." [WB:dr]
-is_a: WBls:0000101 ! all stages nematode
+is_a: WBls:0000101 ! nematode life stage
 relationship: starts_at_end_of WBls:0000102 ! embryo nematode
 created_by: danielaraciti
 creation_date: 2013-11-25T06:14:39Z
