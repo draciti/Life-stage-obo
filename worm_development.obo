@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 16:03:2016 10:47
+date: 16:03:2016 11:52
 saved-by: jl16
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: worm_development
@@ -20,14 +20,13 @@ id: WBls:0000002
 name: all stages Ce
 def: "All C. elegans development stages, including embryo, larva and adult stage." [WB:wjc]
 is_a: WBls:0000001 ! free-living nematode stage
-is_a: WBls:0000101 ! nematode life stage
 
 [Term]
 id: WBls:0000003
 name: embryo Ce
 def: "The whole period of embryogenesis, from the formation of an egg till its hatch." [WB:wjc]
 is_a: WBls:0000002 ! all stages Ce
-is_a: WBls:0000102 ! embryo nematode
+is_a: WBls:0000102 ! nematode embryo
 
 [Term]
 id: WBls:0000004
@@ -174,7 +173,7 @@ relationship: starts_at_end_of WBls:0000003 ! embryo Ce
 id: WBls:0000023
 name: larva Ce
 def: "From the time after hatch till becomes adult." [WB:wjc]
-is_a: WBls:0000105 ! larva nematode
+is_a: WBls:0000105 ! nematode larva
 relationship: part_of WBls:0000022 ! postembryonic Ce
 relationship: starts_at_end_of WBls:0000003 ! embryo Ce
 
@@ -182,7 +181,7 @@ relationship: starts_at_end_of WBls:0000003 ! embryo Ce
 id: WBls:0000024
 name: L1 larva Ce
 def: "The first stage larva. At 25 Centigrade, it ranges 14-25.5 hours after fertilization, 0-11.5 hours after hatch." [WB:wjc]
-is_a: WBls:0000106 ! L1 larva nematode
+is_a: WBls:0000106 ! L1
 relationship: part_of WBls:0000023 ! larva Ce
 relationship: starts_at_end_of WBls:0000003 ! embryo Ce
 
@@ -203,7 +202,7 @@ relationship: starts_at_end_of WBls:0000024 ! L1 larva Ce
 id: WBls:0000027
 name: L2 larva Ce
 def: "The second stage larva. At 25 Centigrade, it ranges 25.5-32.5 hours after fertilization, 11.5-18.5 hours after hatch." [WB:wjc]
-is_a: WBls:0000107 ! L2 larva nematode
+is_a: WBls:0000107 ! L2
 relationship: part_of WBls:0000023 ! larva Ce
 relationship: preceded_by WBls:0000024 ! L1 larva Ce
 relationship: starts_at_end_of WBls:0000026 ! L1-L2 molt Ce
@@ -256,7 +255,7 @@ relationship: part_of WBls:0000052 ! post dauer stage Ce
 id: WBls:0000035
 name: L3 larva Ce
 def: "The third stage larva. At 25 Centigrade, it ranges 32.5-40 hours after fertilization, 18.5-26 hours after hatch." [WB:wjc]
-is_a: WBls:0000108 ! L3 larva nematode
+is_a: WBls:0000108 ! L3
 relationship: part_of WBls:0000023 ! larva Ce
 relationship: preceded_by WBls:0000027 ! L2 larva Ce
 relationship: starts_at_end_of WBls:0000029 ! L2-L3 molt Ce
@@ -278,7 +277,7 @@ relationship: starts_at_end_of WBls:0000035 ! L3 larva Ce
 id: WBls:0000038
 name: L4 larva Ce
 def: "The fourth stage larva. At 25 Centigrade, it ranges 40-49.5 hours after fertilization, 26-35.5 hours after hatch." [WB:wjc]
-is_a: WBls:0000109 ! L4 larva nematode
+is_a: WBls:0000109 ! L4
 relationship: part_of WBls:0000023 ! larva Ce
 relationship: preceded_by WBls:0000035 ! L3 larva Ce
 relationship: starts_at_end_of WBls:0000032 ! dauer larva Ce
@@ -524,84 +523,84 @@ creation_date: 2012-05-22T14:35:04Z
 
 [Term]
 id: WBls:0000075
-name: Nematoda Life Stage
+name: worm life stage
 created_by: danielaraciti
 creation_date: 2012-05-30T09:04:28Z
 
 [Term]
 id: WBls:0000076
-name: all stages Strongyloides
-def: "All Strongyloides development stages, including free-living and parasitic stages." [WB:jl]
+name: Strongyloides life stage
+def: "Any Strongyloides developmental stage, including free-living and parasitic stages." [WB:jl]
+synonym: "all stages Strongyloides" EXACT []
 is_a: WBls:0000101 ! nematode life stage
 created_by: jl16
 creation_date: 2015-03-19T10:49:23Z
 
 [Term]
 id: WBls:0000077
-name: sheathed microfilaria Bma
+name: Brugia sheathed microfilaria
+alt_id: WBls:0000662
 def: "Sheathed microfilaria larvae are surrounded by a membrane thought to be derived from the vitelline membrane." [WB:dr, WB:mb]
+synonym: "Brugia immature microfilaria" EXACT []
+synonym: "immature microfilaria Bma" RELATED []
+synonym: "sheathed microfilaria Bma" EXACT []
 is_a: WBls:0000110 ! sheathed microfilaria nematode
-relationship: part_of WBls:0000665 ! microfilaria Bma
+is_a: WBls:0000665 ! Brugia microfilaria
 created_by: danielaraciti
 creation_date: 2012-05-30T09:23:44Z
 
 [Term]
-id: WBls:0000078
-name: unsheathed microfilaria Bma
-def: "In the mosquito, the microfilariae shed sheaths, penetrate the midgut, and migrate to the thoracic muscles were the microfilariae increase in size, molt, and develop into infective larvae (L1 and L3) over a span of 7-21 days." [WB:dr, WB:mb]
-is_a: WBls:0000666 ! unsheathed microfilaria nematode
-relationship: part_of WBls:0000665 ! microfilaria Bma
-relationship: starts_at_end_of WBls:0000077 ! sheathed microfilaria Bma
-created_by: danielaraciti
-creation_date: 2012-05-30T09:29:01Z
-
-[Term]
 id: WBls:0000079
-name: L1 larva Bma
+name: Brugia L1
 def: "The first stage larva." [WB:dr, WB:mb]
-is_a: WBls:0000106 ! L1 larva nematode
-relationship: part_of WBls:0000097 ! larva Bma
-relationship: starts_at_end_of WBls:0000078 ! unsheathed microfilaria Bma
+synonym: "L1 larva Bma" EXACT []
+is_a: WBls:0000106 ! L1
+relationship: part_of WBls:0000097 ! Brugia larval stage
+relationship: starts_at_end_of WBls:0000663 ! Brugia unsheathed microfilaria
 created_by: danielaraciti
 creation_date: 2012-05-30T09:29:36Z
 
 [Term]
 id: WBls:0000080
-name: L2 larva Bma
+name: Brugia L2
 def: "The second stage larva. Derived from flight muscles of vector host; some development in vitro, with L1 to L2 moulting, has been demonstrated but rarely; these are often staged by hours or days post blood meal." [WB:dr, WB:mb]
-is_a: WBls:0000107 ! L2 larva nematode
-relationship: part_of WBls:0000097 ! larva Bma
-relationship: starts_at_end_of WBls:0000079 ! L1 larva Bma
+synonym: "L2 larva Bma" EXACT []
+is_a: WBls:0000107 ! L2
+relationship: part_of WBls:0000097 ! Brugia larval stage
+relationship: starts_at_end_of WBls:0000079 ! Brugia L1
 created_by: danielaraciti
 creation_date: 2012-05-30T09:30:40Z
 
 [Term]
 id: WBls:0000081
-name: L3 larva Bma
+name: Brugia L3
 def: "The third stage larva." [WB:dr, WB:mb]
-is_a: WBls:0000108 ! L3 larva nematode
-relationship: part_of WBls:0000097 ! larva Bma
-relationship: starts_at_end_of WBls:0000080 ! L2 larva Bma
+synonym: "L3 larva Bma" EXACT []
+is_a: WBls:0000108 ! L3
+relationship: part_of WBls:0000097 ! Brugia larval stage
+relationship: starts_at_end_of WBls:0000080 ! Brugia L2
 created_by: danielaraciti
 creation_date: 2012-05-30T09:31:06Z
 
 [Term]
 id: WBls:0000082
-name: L4 larva Bma
+name: Brugia L4
 def: "The fourth stage larva. Should be conditioned by days post infection; as moulting is not synchronous, some samples are defined as L3/L4, indicating a mix of individuals as late L3, moulting, and early L4." [WB:dr, WB:mb]
-is_a: WBls:0000109 ! L4 larva nematode
-relationship: part_of WBls:0000097 ! larva Bma
-relationship: starts_at_end_of WBls:0000081 ! L3 larva Bma
+synonym: "L4 larva Bma" EXACT []
+is_a: WBls:0000109 ! L4
+relationship: part_of WBls:0000097 ! Brugia larval stage
+relationship: starts_at_end_of WBls:0000081 ! Brugia L3
 created_by: danielaraciti
 creation_date: 2012-05-30T09:31:38Z
 
 [Term]
 id: WBls:0000083
-name: adult Bma
+name: Brugia adult
 def: "The stage that begins when a B. malayi individual is fully-developed and has reached maturity. Adult B. malayi (or at least adult females) can live for 10 years in a human host, and can outlive their rodent laboratory hosts; it is usual to state the chronological age of the nematodes in days or months post-infection, and occasionally post-patency (the production of first microfilariae)." [WB:dr, WB:mb]
+synonym: "adult Bma" EXACT []
 is_a: WBls:0000104 ! adult nematode
-relationship: part_of WBls:0000093 ! postembryonic Bma
-relationship: starts_at_end_of WBls:0000100 ! young adult Bma
+relationship: part_of WBls:0000093 ! Brugia postembryonic stage
+relationship: starts_at_end_of WBls:0000100 ! Brugia young adult
 created_by: danielaraciti
 creation_date: 2012-05-30T09:32:18Z
 
@@ -675,94 +674,105 @@ creation_date: 2012-10-16T15:37:30Z
 
 [Term]
 id: WBls:0000091
-name: all stages Bma
-def: "All B. malayi developmental stages, including embryo, larva and adult stage." [WB:dr, WB:mb]
+name: Brugia life stage
+def: "Any Brugia developmental stage, including embryo, larva and adult stage." [WB:dr, WB:jl, WB:mb]
+synonym: "all stages Bma" BROAD []
+xref: XX:<new xref>
 is_a: WBls:0000059 ! parasitic nematode stage
-is_a: WBls:0000101 ! nematode life stage
 created_by: danielaraciti
 creation_date: 2013-11-12T03:18:57Z
 
 [Term]
 id: WBls:0000092
-name: embryo Bma
+name: Brugia embryo
 def: "The whole period of embryogenesis, from the formation of an egg till its hatch." [WB:dr]
-is_a: WBls:0000091 ! all stages Bma
-is_a: WBls:0000102 ! embryo nematode
+synonym: "embryo Bma" EXACT []
+is_a: WBls:0000091 ! Brugia life stage
+is_a: WBls:0000102 ! nematode embryo
 created_by: danielaraciti
 creation_date: 2013-11-12T04:48:28Z
 
 [Term]
 id: WBls:0000093
-name: postembryonic Bma
+name: Brugia postembryonic stage
 def: "The stage after hatch till death." [WB:dr]
-is_a: WBls:0000091 ! all stages Bma
+synonym: "postembryonic Bma" EXACT []
+is_a: WBls:0000091 ! Brugia life stage
 is_a: WBls:0000103 ! postembryonic nematode
-relationship: starts_at_end_of WBls:0000092 ! embryo Bma
+relationship: starts_at_end_of WBls:0000092 ! Brugia embryo
 created_by: danielaraciti
 creation_date: 2013-11-12T04:50:29Z
 
 [Term]
 id: WBls:0000094
-name: early embryo Bma
+name: Brugia early embryo
 def: "Proliferates from 1 to 100 cells. As the Brugia female reproductive tract is long (>10 cm), it is possible to dissect it and select early embryos just by isolating early parts of the post-spermatheca uterus." [WB:dr, WB:mb]
-relationship: part_of WBls:0000092 ! embryo Bma
+synonym: "early embryo Bma" EXACT []
+relationship: part_of WBls:0000092 ! Brugia embryo
 created_by: danielaraciti
 creation_date: 2013-11-12T04:55:53Z
 
 [Term]
 id: WBls:0000095
-name: middle embryo Bma
+name: Brugia middle embryo
 def: "Proliferates from 100 cells to Lima bean stage." [WB:dr, WB:mb]
-relationship: part_of WBls:0000092 ! embryo Bma
-relationship: starts_at_end_of WBls:0000094 ! early embryo Bma
+synonym: "middle embryo Bma" EXACT []
+relationship: part_of WBls:0000092 ! Brugia embryo
+relationship: starts_at_end_of WBls:0000094 ! Brugia early embryo
 created_by: danielaraciti
 creation_date: 2013-11-12T04:59:19Z
 
 [Term]
 id: WBls:0000096
-name: late embryo Bma
+name: Brugia late embryo
 def: "From Lima bean to hatching." [WB:dr, WB:mb]
-relationship: part_of WBls:0000092 ! embryo Bma
-relationship: starts_at_end_of WBls:0000095 ! middle embryo Bma
+synonym: "late embryo Bma" EXACT []
+relationship: part_of WBls:0000092 ! Brugia embryo
+relationship: starts_at_end_of WBls:0000095 ! Brugia middle embryo
 created_by: danielaraciti
 creation_date: 2013-11-12T05:00:28Z
 
 [Term]
 id: WBls:0000097
-name: larva Bma
+name: Brugia larval stage
 def: "From the time after hatch till becomes adult." [WB:dr]
-is_a: WBls:0000105 ! larva nematode
-relationship: part_of WBls:0000093 ! postembryonic Bma
-relationship: starts_at_end_of WBls:0000092 ! embryo Bma
+synonym: "larva Bma" EXACT []
+is_a: WBls:0000105 ! nematode larva
+relationship: part_of WBls:0000093 ! Brugia postembryonic stage
+relationship: starts_at_end_of WBls:0000092 ! Brugia embryo
 created_by: danielaraciti
 creation_date: 2013-11-12T05:12:19Z
 
 [Term]
 id: WBls:0000098
-name: vector-derived L3 Bma
+name: Brugia L3i
 def: "Also known as infective L3, or iL3; i.e. isolated from the vector salivary glands; these samples may-should be conditioned by age, which is usually counted in days from the blood meal." [WB:dr, WB:mb]
+synonym: "Brugia vector-derived L3" EXACT []
 synonym: "iL3" RELATED []
 synonym: "infective L3" RELATED []
+synonym: "vector-derived L3 Bma" EXACT []
+is_a: WBls:0000081 ! Brugia L3
 is_a: WBls:0000679 ! infective stage larva
-relationship: part_of WBls:0000081 ! L3 larva Bma
 created_by: danielaraciti
 creation_date: 2013-11-12T05:23:54Z
 
 [Term]
 id: WBls:0000099
-name: post-infection L3 Bma
+name: Brugia post-infection L3
 def: "Derived from the host after reintroduction by vector feeding or manual inoculation; these piL3 samples are often-should be conditioned by age (hours or days post-infection)." [WB:dr, WB:mb]
 synonym: "piL3" RELATED []
-relationship: part_of WBls:0000081 ! L3 larva Bma
+synonym: "post-infection L3 Bma" EXACT []
+relationship: part_of WBls:0000081 ! Brugia L3
 created_by: danielaraciti
 creation_date: 2013-11-12T05:24:59Z
 
 [Term]
 id: WBls:0000100
-name: young adult Bma
+name: Brugia young adult
 def: "The animals have a significant \"prepatent\" period in the host, where they have moulted to adults but not yet started producing eggs or sperm; this stage is usually-should be conditioned by days post infection, with day 26 to approximately day 60 being the \"young adult\" in most systems - but note that the speed of development is different in different host genotypes." [WB:dr, WB:mb]
-relationship: part_of WBls:0000093 ! postembryonic Bma
-relationship: starts_at_end_of WBls:0000082 ! L4 larva Bma
+synonym: "young adult Bma" EXACT []
+relationship: part_of WBls:0000093 ! Brugia postembryonic stage
+relationship: starts_at_end_of WBls:0000082 ! Brugia L4
 created_by: danielaraciti
 creation_date: 2013-11-12T05:37:52Z
 
@@ -771,14 +781,16 @@ id: WBls:0000101
 name: nematode life stage
 def: "Any developmental stage in a nematode, including embryo, larva and adult stage." [WB:dr, WB:jl]
 synonym: "all stages nematode" EXACT []
-is_a: WBls:0000075 ! Nematoda Life Stage
+synonym: "platyhelminth developmental stage" EXACT []
+is_a: WBls:0000075 ! worm life stage
 created_by: danielaraciti
 creation_date: 2013-11-25T06:13:37Z
 
 [Term]
 id: WBls:0000102
-name: embryo nematode
+name: nematode embryo
 def: "The whole period of embryogenesis, from the formation of an egg till its hatch." [WB:dr]
+synonym: "embryo nematode" EXACT []
 synonym: "nematode egg stage" EXACT []
 is_a: WBls:0000101 ! nematode life stage
 created_by: danielaraciti
@@ -789,7 +801,7 @@ id: WBls:0000103
 name: postembryonic nematode
 def: "The stage after hatch till death." [WB:dr]
 is_a: WBls:0000101 ! nematode life stage
-relationship: starts_at_end_of WBls:0000102 ! embryo nematode
+relationship: starts_at_end_of WBls:0000102 ! nematode embryo
 created_by: danielaraciti
 creation_date: 2013-11-25T06:14:39Z
 
@@ -798,51 +810,56 @@ id: WBls:0000104
 name: adult nematode
 def: "The stage that begins when an animal is fully-developed and has reached maturity." [WB:dr]
 is_a: WBls:0000103 ! postembryonic nematode
-relationship: starts_at_end_of WBls:0000105 ! larva nematode
+relationship: starts_at_end_of WBls:0000105 ! nematode larva
 created_by: danielaraciti
 creation_date: 2013-11-25T06:18:53Z
 
 [Term]
 id: WBls:0000105
-name: larva nematode
+name: nematode larva
 def: "The stage that begins after hatching and ends when the nematode becomes adult." [WB:dr]
+synonym: "larva nematode" EXACT []
 is_a: WBls:0000103 ! postembryonic nematode
 created_by: danielaraciti
 creation_date: 2013-11-25T06:19:27Z
 
 [Term]
 id: WBls:0000106
-name: L1 larva nematode
+name: L1
 def: "The first stage larva." [WB:dr]
-relationship: part_of WBls:0000105 ! larva nematode
+synonym: "L1 larva nematode" EXACT []
+relationship: part_of WBls:0000105 ! nematode larva
 relationship: starts_at_end_of WBls:0000110 ! sheathed microfilaria nematode
 created_by: danielaraciti
 creation_date: 2013-11-25T06:20:28Z
 
 [Term]
 id: WBls:0000107
-name: L2 larva nematode
+name: L2
 def: "The second stage larva." [WB:dr]
-relationship: part_of WBls:0000105 ! larva nematode
-relationship: starts_at_end_of WBls:0000106 ! L1 larva nematode
+synonym: "L2 larva nematode" EXACT []
+relationship: part_of WBls:0000105 ! nematode larva
+relationship: starts_at_end_of WBls:0000106 ! L1
 created_by: danielaraciti
 creation_date: 2013-11-25T06:20:54Z
 
 [Term]
 id: WBls:0000108
-name: L3 larva nematode
+name: L3
 def: "The third stage larva." [WB:dr]
-relationship: part_of WBls:0000105 ! larva nematode
-relationship: starts_at_end_of WBls:0000107 ! L2 larva nematode
+synonym: "L3 larva nematode" EXACT []
+relationship: part_of WBls:0000105 ! nematode larva
+relationship: starts_at_end_of WBls:0000107 ! L2
 created_by: danielaraciti
 creation_date: 2013-11-25T06:21:33Z
 
 [Term]
 id: WBls:0000109
-name: L4 larva nematode
+name: L4
 def: "The fourth stage larva." [WB:dr]
-relationship: part_of WBls:0000105 ! larva nematode
-relationship: starts_at_end_of WBls:0000108 ! L3 larva nematode
+synonym: "L4 larva nematode" EXACT []
+relationship: part_of WBls:0000105 ! nematode larva
+relationship: starts_at_end_of WBls:0000108 ! L3
 created_by: danielaraciti
 creation_date: 2013-11-25T06:22:48Z
 
@@ -850,7 +867,7 @@ creation_date: 2013-11-25T06:22:48Z
 id: WBls:0000110
 name: sheathed microfilaria nematode
 def: "Sheathed microfilaria larvae are surrounded by a membrane thought to be derived from the vitelline membrane." [WB:dr]
-relationship: part_of WBls:0000664 ! microfilaria nematode
+relationship: part_of WBls:0000664 ! microfilaria
 created_by: danielaraciti
 creation_date: 2013-11-25T06:23:23Z
 
@@ -5813,43 +5830,46 @@ created_by: danielaraciti
 creation_date: 2014-04-25T09:29:36Z
 
 [Term]
-id: WBls:0000662
-name: immature microfilaria Bma
-relationship: part_of WBls:0000077 ! sheathed microfilaria Bma
-created_by: danielaraciti
-creation_date: 2014-11-10T09:29:36Z
-
-[Term]
 id: WBls:0000663
-name: mature microfilaria Bma
-relationship: part_of WBls:0000077 ! sheathed microfilaria Bma
-relationship: starts_at_end_of WBls:0000662 ! immature microfilaria Bma
+name: Brugia unsheathed microfilaria
+alt_id: WBls:0000078
+def: "In the mosquito, the microfilariae shed sheaths, penetrate the midgut, and migrate to the thoracic muscles were the microfilariae increase in size, molt, and develop into infective larvae (L1 and L3) over a span of 7-21 days." [WB:dr, WB:mb]
+synonym: "Brugia mature microfilaria" EXACT []
+synonym: "mature microfilaria Bma" EXACT []
+synonym: "unsheathed microfilaria Bma" EXACT []
+is_a: WBls:0000665 ! Brugia microfilaria
+is_a: WBls:0000666 ! unsheathed microfilaria nematode
+relationship: starts_at_end_of WBls:0000077 ! Brugia sheathed microfilaria
 created_by: danielaraciti
 creation_date: 2014-11-10T09:29:36Z
 
 [Term]
 id: WBls:0000664
-name: microfilaria nematode
+name: microfilaria
 def: "The microfilaria is an early stage in the life cycle of certain parasitic nematodes in the family Onchocercidae. Microfilaria is the stage which develops from the egg and precedes the L1 stage." [WB:dr]
 comment: Anderson, R.C. (2000) Nematode Parasites of Vertebrates: Their Development and Transmission. Second Edition. CABI Publishing: Wallingford, England, pp. 472-475.
-relationship: part_of WBls:0000105 ! larva nematode
+synonym: "MF" EXACT []
+synonym: "microfilaria nematode" EXACT []
+relationship: part_of WBls:0000105 ! nematode larva
 created_by: danielaraciti
 creation_date: 2014-11-25T09:23:44Z
 
 [Term]
 id: WBls:0000665
-name: microfilaria Bma
+name: Brugia microfilaria
 def: "Microfilaria is the stage which develops from the egg and precedes the L1 stage." [WB:dr, WB:mb]
-is_a: WBls:0000664 ! microfilaria nematode
-relationship: part_of WBls:0000097 ! larva Bma
+synonym: "Brugia MF" EXACT []
+synonym: "microfilaria Bma" EXACT []
+is_a: WBls:0000664 ! microfilaria
+relationship: part_of WBls:0000097 ! Brugia larval stage
 created_by: danielaraciti
 creation_date: 2014-11-25T09:25:34Z
 
 [Term]
 id: WBls:0000666
 name: unsheathed microfilaria nematode
-relationship: part_of WBls:0000664 ! microfilaria nematode
-relationship: starts_at_end_of WBls:0000102 ! embryo nematode
+relationship: part_of WBls:0000664 ! microfilaria
+relationship: starts_at_end_of WBls:0000102 ! nematode embryo
 relationship: starts_at_end_of WBls:0000110 ! sheathed microfilaria nematode
 created_by: danielaraciti
 creation_date: 2014-11-25T09:50:35Z
@@ -5929,7 +5949,7 @@ id: WBls:0000677
 name: Strongyloides free-living stage
 def: "The stage of the Strongyloides life-cycle that occurs entirely outside of a host or vector organism." [WB:jl]
 is_a: WBls:0000001 ! free-living nematode stage
-is_a: WBls:0000076 ! all stages Strongyloides
+is_a: WBls:0000076 ! Strongyloides life stage
 created_by: jl16
 creation_date: 2015-03-19T10:51:48Z
 
@@ -5938,7 +5958,7 @@ id: WBls:0000678
 name: Strongyloides parasitic stage
 def: "The stage of the Strongyloides life-cycle that occurs entirely or partially inside a host or vector organism." [WB:jl]
 is_a: WBls:0000059 ! parasitic nematode stage
-is_a: WBls:0000076 ! all stages Strongyloides
+is_a: WBls:0000076 ! Strongyloides life stage
 created_by: jl16
 creation_date: 2015-03-19T10:52:41Z
 
@@ -5947,7 +5967,7 @@ id: WBls:0000679
 name: infective stage larva
 def: "Larval stage that is capable of infecting a host organism." [WB:jl]
 comment: Host organism here refers to the main host organism rather than intermediate hosts.
-is_a: WBls:0000105 ! larva nematode
+is_a: WBls:0000105 ! nematode larva
 created_by: jl16
 creation_date: 2015-03-19T11:21:35Z
 
@@ -5957,7 +5977,7 @@ name: Strongyloides infective L3
 def: "Strongyloides infective stage L3 larval stage. This stage can develop as a part of a free-living life-cycle, or from a parasitic, parthenogenic female stage." [WB:jl]
 synonym: "Strongyloides iL3" EXACT []
 synonym: "Strongyloides infective stage larva" EXACT []
-is_a: WBls:0000108 ! L3 larva nematode
+is_a: WBls:0000108 ! L3
 is_a: WBls:0000678 ! Strongyloides parasitic stage
 is_a: WBls:0000679 ! infective stage larva
 created_by: jl16
@@ -6173,10 +6193,66 @@ created_by: danielaraciti
 creation_date: 2015-10-06T11:30:33Z
 
 [Term]
+id: WBls:0000704
+name: platyhelminth life stage
+def: "Any developmental stage in a platyhelminth." [WB:jl]
+synonym: "platyhelminth developmental stage" EXACT []
+is_a: WBls:0000075 ! worm life stage
+created_by: jl16
+creation_date: 2016-03-16T11:14:50Z
+
+[Term]
+id: WBls:0000705
+name: platyhelminth egg
+is_a: WBls:0000704 ! platyhelminth life stage
+created_by: jl16
+creation_date: 2016-03-16T11:17:04Z
+
+[Term]
+id: WBls:0000706
+name: miracidium
+def: "Free-swimming larval stage. Once the egg is released into environment, the miracidium hatches immediately and starts swimming in search of an intermediate host. In Schistosoma mansoni this is a snail of species Biomphalaria." [WB:jl]
+is_a: WBls:0000704 ! platyhelminth life stage
+created_by: jl16
+creation_date: 2016-03-16T11:35:26Z
+
+[Term]
+id: WBls:0000707
+name: sporocyst
+def: "A sac-like secondary larval stage. The miracidium transforms into a primary (mother) sporocyst; germ cells within the primary sporocyst begin dividing to produce secondary (daughter) sporocysts, which migrate to the snail hepatopancreas; once at the hepatopancreas, germ cells within the secondary sporocyst begin to divide again, this time producing cercariae." [WB:jl]
+is_a: WBls:0000704 ! platyhelminth life stage
+created_by: jl16
+creation_date: 2016-03-16T11:42:15Z
+
+[Term]
+id: WBls:0000708
+name: cercarium
+def: "An infectious form which infects by direct skin penetration. Cercariae emerge daily from the intermediate snail host; they are highly motile, alternating between vigorous upward movement and sinking; cercarium attaches to the human skin and secretes proteolytic enzymes helping it to enter into cutaneous capillary vessel; upon the penetration the cercarium sheds its tail and transforms into schistosomulum." [WB:jl]
+is_a: WBls:0000704 ! platyhelminth life stage
+created_by: jl16
+creation_date: 2016-03-16T11:44:51Z
+
+[Term]
+id: WBls:0000709
+name: schistosomulum
+def: "A tailless cercarium. After penetration and spending a few days in the skin, schistosomula migrate to the lungs and enter the systemic circulation and are carried to the mesenteric vein of the host where they mature into adult schistosomes. Female schistosomes cannot maturate without a mature male. The male schistosome holds female between its gynecophoral canal and sexual reproduction of the parasite can begin." [WB:jl]
+is_a: WBls:0000704 ! platyhelminth life stage
+created_by: jl16
+creation_date: 2016-03-16T11:46:43Z
+
+[Term]
+id: WBls:0000710
+name: platyhelminth adult
+def: "The mature, fully developed form of a plathelminth capable of sexual reproduction." [WB:jl]
+is_a: WBls:0000704 ! platyhelminth life stage
+created_by: jl16
+creation_date: 2016-03-16T11:51:21Z
+
+[Term]
 id: WBls:0000793
 name: Strongyloides post free-living L1
 def: "Strongyloides L1 larval stage that is the progeny of free-living adult worms as a part of a of free-living life-cycle." [WB:jl]
-is_a: WBls:0000106 ! L1 larva nematode
+is_a: WBls:0000106 ! L1
 is_a: WBls:0000677 ! Strongyloides free-living stage
 created_by: jl16
 creation_date: 2015-11-25T11:38:04Z
@@ -6185,7 +6261,7 @@ creation_date: 2015-11-25T11:38:04Z
 id: WBls:0000794
 name: Strongyloides post parasitic L1
 def: "Strongyloides  L1 larval stage that is the progeny of a parasitic adult female as a part of a of parasitic life-cycle." [WB:jl]
-is_a: WBls:0000106 ! L1 larva nematode
+is_a: WBls:0000106 ! L1
 is_a: WBls:0000678 ! Strongyloides parasitic stage
 created_by: jl16
 creation_date: 2015-11-25T11:39:14Z
