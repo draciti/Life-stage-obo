@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 16:03:2016 11:52
+date: 16:03:2016 13:07
 saved-by: jl16
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: worm_development
@@ -173,7 +173,7 @@ relationship: starts_at_end_of WBls:0000003 ! embryo Ce
 id: WBls:0000023
 name: larva Ce
 def: "From the time after hatch till becomes adult." [WB:wjc]
-is_a: WBls:0000105 ! nematode larva
+is_a: WBls:0000105 ! nematode larval stage
 relationship: part_of WBls:0000022 ! postembryonic Ce
 relationship: starts_at_end_of WBls:0000003 ! embryo Ce
 
@@ -299,7 +299,7 @@ relationship: part_of WBls:0000023 ! larva Ce
 id: WBls:0000041
 name: adult Ce
 def: "The stage that begins when a C.elegans individual is fully-developed and has reached maturity." [WB:wjc]
-is_a: WBls:0000104 ! adult nematode
+is_a: WBls:0000104 ! nematode adult
 relationship: part_of WBls:0000022 ! postembryonic Ce
 relationship: preceded_by WBls:0000038 ! L4 larva Ce
 relationship: starts_at_end_of WBls:0000023 ! larva Ce
@@ -544,7 +544,7 @@ def: "Sheathed microfilaria larvae are surrounded by a membrane thought to be de
 synonym: "Brugia immature microfilaria" EXACT []
 synonym: "immature microfilaria Bma" RELATED []
 synonym: "sheathed microfilaria Bma" EXACT []
-is_a: WBls:0000110 ! sheathed microfilaria nematode
+is_a: WBls:0000110 ! sheathed microfilaria
 is_a: WBls:0000665 ! Brugia microfilaria
 created_by: danielaraciti
 creation_date: 2012-05-30T09:23:44Z
@@ -598,7 +598,7 @@ id: WBls:0000083
 name: Brugia adult
 def: "The stage that begins when a B. malayi individual is fully-developed and has reached maturity. Adult B. malayi (or at least adult females) can live for 10 years in a human host, and can outlive their rodent laboratory hosts; it is usual to state the chronological age of the nematodes in days or months post-infection, and occasionally post-patency (the production of first microfilariae)." [WB:dr, WB:mb]
 synonym: "adult Bma" EXACT []
-is_a: WBls:0000104 ! adult nematode
+is_a: WBls:0000104 ! nematode adult
 relationship: part_of WBls:0000093 ! Brugia postembryonic stage
 relationship: starts_at_end_of WBls:0000100 ! Brugia young adult
 created_by: danielaraciti
@@ -737,7 +737,7 @@ id: WBls:0000097
 name: Brugia larval stage
 def: "From the time after hatch till becomes adult." [WB:dr]
 synonym: "larva Bma" EXACT []
-is_a: WBls:0000105 ! nematode larva
+is_a: WBls:0000105 ! nematode larval stage
 relationship: part_of WBls:0000093 ! Brugia postembryonic stage
 relationship: starts_at_end_of WBls:0000092 ! Brugia embryo
 created_by: danielaraciti
@@ -752,7 +752,7 @@ synonym: "iL3" RELATED []
 synonym: "infective L3" RELATED []
 synonym: "vector-derived L3 Bma" EXACT []
 is_a: WBls:0000081 ! Brugia L3
-is_a: WBls:0000679 ! infective stage larva
+is_a: WBls:0000679 ! nematode infective stage larva
 created_by: danielaraciti
 creation_date: 2013-11-12T05:23:54Z
 
@@ -807,18 +807,20 @@ creation_date: 2013-11-25T06:14:39Z
 
 [Term]
 id: WBls:0000104
-name: adult nematode
+name: nematode adult
 def: "The stage that begins when an animal is fully-developed and has reached maturity." [WB:dr]
+synonym: "adult nematode" EXACT []
 is_a: WBls:0000103 ! postembryonic nematode
-relationship: starts_at_end_of WBls:0000105 ! nematode larva
+relationship: starts_at_end_of WBls:0000105 ! nematode larval stage
 created_by: danielaraciti
 creation_date: 2013-11-25T06:18:53Z
 
 [Term]
 id: WBls:0000105
-name: nematode larva
+name: nematode larval stage
 def: "The stage that begins after hatching and ends when the nematode becomes adult." [WB:dr]
 synonym: "larva nematode" EXACT []
+synonym: "nematode larva" EXACT []
 is_a: WBls:0000103 ! postembryonic nematode
 created_by: danielaraciti
 creation_date: 2013-11-25T06:19:27Z
@@ -828,8 +830,8 @@ id: WBls:0000106
 name: L1
 def: "The first stage larva." [WB:dr]
 synonym: "L1 larva nematode" EXACT []
-relationship: part_of WBls:0000105 ! nematode larva
-relationship: starts_at_end_of WBls:0000110 ! sheathed microfilaria nematode
+is_a: WBls:0000105 ! nematode larval stage
+relationship: starts_at_end_of WBls:0000110 ! sheathed microfilaria
 created_by: danielaraciti
 creation_date: 2013-11-25T06:20:28Z
 
@@ -838,7 +840,7 @@ id: WBls:0000107
 name: L2
 def: "The second stage larva." [WB:dr]
 synonym: "L2 larva nematode" EXACT []
-relationship: part_of WBls:0000105 ! nematode larva
+is_a: WBls:0000105 ! nematode larval stage
 relationship: starts_at_end_of WBls:0000106 ! L1
 created_by: danielaraciti
 creation_date: 2013-11-25T06:20:54Z
@@ -848,7 +850,7 @@ id: WBls:0000108
 name: L3
 def: "The third stage larva." [WB:dr]
 synonym: "L3 larva nematode" EXACT []
-relationship: part_of WBls:0000105 ! nematode larva
+is_a: WBls:0000105 ! nematode larval stage
 relationship: starts_at_end_of WBls:0000107 ! L2
 created_by: danielaraciti
 creation_date: 2013-11-25T06:21:33Z
@@ -858,16 +860,18 @@ id: WBls:0000109
 name: L4
 def: "The fourth stage larva." [WB:dr]
 synonym: "L4 larva nematode" EXACT []
-relationship: part_of WBls:0000105 ! nematode larva
+is_a: WBls:0000105 ! nematode larval stage
 relationship: starts_at_end_of WBls:0000108 ! L3
 created_by: danielaraciti
 creation_date: 2013-11-25T06:22:48Z
 
 [Term]
 id: WBls:0000110
-name: sheathed microfilaria nematode
+name: sheathed microfilaria
 def: "Sheathed microfilaria larvae are surrounded by a membrane thought to be derived from the vitelline membrane." [WB:dr]
-relationship: part_of WBls:0000664 ! microfilaria
+synonym: "sheathed microfilaria nematode" EXACT []
+synonym: "sheathed microfilariae" EXACT []
+is_a: WBls:0000664 ! microfilaria
 created_by: danielaraciti
 creation_date: 2013-11-25T06:23:23Z
 
@@ -5838,7 +5842,7 @@ synonym: "Brugia mature microfilaria" EXACT []
 synonym: "mature microfilaria Bma" EXACT []
 synonym: "unsheathed microfilaria Bma" EXACT []
 is_a: WBls:0000665 ! Brugia microfilaria
-is_a: WBls:0000666 ! unsheathed microfilaria nematode
+is_a: WBls:0000666 ! unsheathed microfilaria
 relationship: starts_at_end_of WBls:0000077 ! Brugia sheathed microfilaria
 created_by: danielaraciti
 creation_date: 2014-11-10T09:29:36Z
@@ -5846,11 +5850,12 @@ creation_date: 2014-11-10T09:29:36Z
 [Term]
 id: WBls:0000664
 name: microfilaria
-def: "The microfilaria is an early stage in the life cycle of certain parasitic nematodes in the family Onchocercidae. Microfilaria is the stage which develops from the egg and precedes the L1 stage." [WB:dr]
+def: "An early stage in the life cycle of some parasitic nematodes which develops from the egg and precedes the L1 stage." [WB:dr, WB:jl]
 comment: Anderson, R.C. (2000) Nematode Parasites of Vertebrates: Their Development and Transmission. Second Edition. CABI Publishing: Wallingford, England, pp. 472-475.
 synonym: "MF" EXACT []
 synonym: "microfilaria nematode" EXACT []
-relationship: part_of WBls:0000105 ! nematode larva
+synonym: "microfilariae" EXACT []
+is_a: WBls:0000105 ! nematode larval stage
 created_by: danielaraciti
 creation_date: 2014-11-25T09:23:44Z
 
@@ -5867,24 +5872,29 @@ creation_date: 2014-11-25T09:25:34Z
 
 [Term]
 id: WBls:0000666
-name: unsheathed microfilaria nematode
-relationship: part_of WBls:0000664 ! microfilaria
+name: unsheathed microfilaria
+synonym: "unsheathed microfilaria nematode" EXACT []
+synonym: "unsheathed microfilariae" EXACT []
+is_a: WBls:0000664 ! microfilaria
 relationship: starts_at_end_of WBls:0000102 ! nematode embryo
-relationship: starts_at_end_of WBls:0000110 ! sheathed microfilaria nematode
+relationship: starts_at_end_of WBls:0000110 ! sheathed microfilaria
 created_by: danielaraciti
 creation_date: 2014-11-25T09:50:35Z
 
 [Term]
 id: WBls:0000667
-name: nodular microfilariae nematode
-relationship: part_of WBls:0000666 ! unsheathed microfilaria nematode
+name: nodular microfilaria
+synonym: "nodular microfilariae" EXACT []
+synonym: "nodular microfilariae nematode" EXACT []
+is_a: WBls:0000666 ! unsheathed microfilaria
 created_by: danielaraciti
 creation_date: 2014-11-25T09:52:54Z
 
 [Term]
 id: WBls:0000668
-name: skin microfilariae nematode
-relationship: part_of WBls:0000666 ! unsheathed microfilaria nematode
+name: skin microfilaria
+synonym: "skin microfilariae" EXACT []
+is_a: WBls:0000666 ! unsheathed microfilaria
 created_by: danielaraciti
 creation_date: 2014-11-25T09:52:54Z
 
@@ -5964,10 +5974,11 @@ creation_date: 2015-03-19T10:52:41Z
 
 [Term]
 id: WBls:0000679
-name: infective stage larva
+name: nematode infective stage larva
 def: "Larval stage that is capable of infecting a host organism." [WB:jl]
 comment: Host organism here refers to the main host organism rather than intermediate hosts.
-is_a: WBls:0000105 ! nematode larva
+synonym: "infective larva" NARROW []
+is_a: WBls:0000105 ! nematode larval stage
 created_by: jl16
 creation_date: 2015-03-19T11:21:35Z
 
@@ -5979,7 +5990,7 @@ synonym: "Strongyloides iL3" EXACT []
 synonym: "Strongyloides infective stage larva" EXACT []
 is_a: WBls:0000108 ! L3
 is_a: WBls:0000678 ! Strongyloides parasitic stage
-is_a: WBls:0000679 ! infective stage larva
+is_a: WBls:0000679 ! nematode infective stage larva
 created_by: jl16
 creation_date: 2015-03-19T11:27:15Z
 
@@ -5988,7 +5999,7 @@ id: WBls:0000681
 name: Strongyloides parasitic female
 def: "The Strongyloides life-cycle stage during which a female adult worm produces larval progeny parthenogenetically within the host organism." [WB:jl]
 synonym: "Strongyloides L5" EXACT []
-is_a: WBls:0000104 ! adult nematode
+is_a: WBls:0000104 ! nematode adult
 is_a: WBls:0000678 ! Strongyloides parasitic stage
 created_by: jl16
 creation_date: 2015-03-19T11:36:03Z
@@ -5998,7 +6009,7 @@ id: WBls:0000682
 name: Strongyloides free-living adult
 def: "The Strongyloides life-cycle stage in which male and female adult worms reproduce sexually and live entirely outside a host organism." [WB:jl]
 synonym: "Strongyloides free-living L5" EXACT []
-is_a: WBls:0000104 ! adult nematode
+is_a: WBls:0000104 ! nematode adult
 is_a: WBls:0000677 ! Strongyloides free-living stage
 created_by: jl16
 creation_date: 2015-03-19T11:48:09Z
@@ -6243,7 +6254,7 @@ creation_date: 2016-03-16T11:46:43Z
 [Term]
 id: WBls:0000710
 name: platyhelminth adult
-def: "The mature, fully developed form of a plathelminth capable of sexual reproduction." [WB:jl]
+def: "The mature, fully developed form of a platyhelminth capable of sexual reproduction." [WB:jl]
 is_a: WBls:0000704 ! platyhelminth life stage
 created_by: jl16
 creation_date: 2016-03-16T11:51:21Z
