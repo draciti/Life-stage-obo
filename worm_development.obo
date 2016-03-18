@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 18:03:2016 09:48
+date: 18:03:2016 12:35
 saved-by: jl16
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: worm_development
@@ -6292,10 +6292,10 @@ creation_date: 2016-03-17T13:42:45Z
 
 [Term]
 id: WBls:0000714
-name: hydatid cyst
+name: hydatid cyst stage
 def: "A larval stage of cestodes characterized by internal (and often external) chambers lined by germinal epithelium. The inner germinal layer of hydatid cysts is cellular and the protoscolex develops from those cells." [PMID:12462989, WB:jl]
 comment: Note that a hydatid cyst is a type of bladder larva, a larval form in which one or more scoleces develop in a fluid-filled cyst. Other types of bladder larva include cysticercus, coenurus and strobilocercus.
-synonym: "hydatid cyst stage" EXACT []
+synonym: "hydatid cyst" EXACT []
 synonym: "metacestode vesicle" EXACT []
 is_a: WBls:0000712 ! Cestoda life stage
 relationship: part_of WBls:0000716 ! metacestode
@@ -6304,10 +6304,10 @@ creation_date: 2016-03-17T14:27:42Z
 
 [Term]
 id: WBls:0000715
-name: protoscolex
+name: protoscolex stage
 def: "An infective larval stage of cestodes which develops from the hydatid cyst. The stage begins when a clustering of cells emerge from the germinal layer of hydatid cysts. The buds elongate and the cells at their bases seem to diminish in number. Very early on a furrow appears in the elongated buds, delimiting anterior (scolex) and caudal (body) regions. Hooks are the first fully-differentiated structures formed at the apical region of the nascent scolex. A cone can later be seen at the center of the hooks, the body is expanded and a structured neck is evident between the scolex and the body. During protoscolex development this parasitic form remains attached to the germinative layer through a stalk. When fully differentiated, the stalk is cut off and the infective protoscolex is now free in the hydatid fluid. This stage ends when the protoscolex attaches, via the scolex, to the host intestinal tissue and begins to develop into a adult." [PMID:12462989, WB:jl]
 comment: Note that a hydatid cyst is a type of bladder larva, a larval form in which one or more scoleces develop in a fluid-filled cyst. Other types of bladder larva include cysticercus, coenurus and strobilocercus.
-synonym: "protoscolex stage" EXACT []
+synonym: "protoscolex" EXACT []
 is_a: WBls:0000712 ! Cestoda life stage
 relationship: part_of WBls:0000716 ! metacestode
 created_by: jl16
@@ -6321,6 +6321,16 @@ synonym: "metacestode stage" EXACT []
 is_a: WBls:0000712 ! Cestoda life stage
 created_by: jl16
 creation_date: 2016-03-17T15:02:35Z
+
+[Term]
+id: WBls:0000717
+name: cysticercoid stage
+def: "A larval stage of some cestodes, including Hymenolepis sp. The cysticercoid is a type of cyst that is found in free form as well as being tissue-enclosed." [WB:jl]
+synonym: "cysticercoid stage" EXACT []
+is_a: WBls:0000712 ! Cestoda life stage
+relationship: part_of WBls:0000716 ! metacestode
+created_by: jl16
+creation_date: 2016-03-18T11:15:07Z
 
 [Term]
 id: WBls:0000793
