@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 16:03:2016 13:07
+date: 18:03:2016 09:48
 saved-by: jl16
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: worm_development
@@ -6205,17 +6205,20 @@ creation_date: 2015-10-06T11:30:33Z
 
 [Term]
 id: WBls:0000704
-name: platyhelminth life stage
-def: "Any developmental stage in a platyhelminth." [WB:jl]
+name: Platyhelminthes life stage
+def: "Any developmental stage in Platyhelminthes (flatworms)." [WB:jl]
 synonym: "platyhelminth developmental stage" EXACT []
+synonym: "Platyhelminthes developmental stage" EXACT []
 is_a: WBls:0000075 ! worm life stage
 created_by: jl16
 creation_date: 2016-03-16T11:14:50Z
 
 [Term]
 id: WBls:0000705
-name: platyhelminth egg
-is_a: WBls:0000704 ! platyhelminth life stage
+name: Platyhelminthes egg
+def: "The egg stage of the Platyhelminthes life cycle. The stage ends upon hatching." [WB:jl]
+synonym: "platyhelminth egg" EXACT []
+is_a: WBls:0000704 ! Platyhelminthes life stage
 created_by: jl16
 creation_date: 2016-03-16T11:17:04Z
 
@@ -6223,7 +6226,7 @@ creation_date: 2016-03-16T11:17:04Z
 id: WBls:0000706
 name: miracidium
 def: "Free-swimming larval stage. Once the egg is released into environment, the miracidium hatches immediately and starts swimming in search of an intermediate host. In Schistosoma mansoni this is a snail of species Biomphalaria." [WB:jl]
-is_a: WBls:0000704 ! platyhelminth life stage
+is_a: WBls:0000711 ! Digenean life stage
 created_by: jl16
 creation_date: 2016-03-16T11:35:26Z
 
@@ -6231,7 +6234,7 @@ creation_date: 2016-03-16T11:35:26Z
 id: WBls:0000707
 name: sporocyst
 def: "A sac-like secondary larval stage. The miracidium transforms into a primary (mother) sporocyst; germ cells within the primary sporocyst begin dividing to produce secondary (daughter) sporocysts, which migrate to the snail hepatopancreas; once at the hepatopancreas, germ cells within the secondary sporocyst begin to divide again, this time producing cercariae." [WB:jl]
-is_a: WBls:0000704 ! platyhelminth life stage
+is_a: WBls:0000711 ! Digenean life stage
 created_by: jl16
 creation_date: 2016-03-16T11:42:15Z
 
@@ -6239,7 +6242,7 @@ creation_date: 2016-03-16T11:42:15Z
 id: WBls:0000708
 name: cercarium
 def: "An infectious form which infects by direct skin penetration. Cercariae emerge daily from the intermediate snail host; they are highly motile, alternating between vigorous upward movement and sinking; cercarium attaches to the human skin and secretes proteolytic enzymes helping it to enter into cutaneous capillary vessel; upon the penetration the cercarium sheds its tail and transforms into schistosomulum." [WB:jl]
-is_a: WBls:0000704 ! platyhelminth life stage
+is_a: WBls:0000711 ! Digenean life stage
 created_by: jl16
 creation_date: 2016-03-16T11:44:51Z
 
@@ -6247,17 +6250,77 @@ creation_date: 2016-03-16T11:44:51Z
 id: WBls:0000709
 name: schistosomulum
 def: "A tailless cercarium. After penetration and spending a few days in the skin, schistosomula migrate to the lungs and enter the systemic circulation and are carried to the mesenteric vein of the host where they mature into adult schistosomes. Female schistosomes cannot maturate without a mature male. The male schistosome holds female between its gynecophoral canal and sexual reproduction of the parasite can begin." [WB:jl]
-is_a: WBls:0000704 ! platyhelminth life stage
+synonym: "somule" EXACT []
+is_a: WBls:0000711 ! Digenean life stage
 created_by: jl16
 creation_date: 2016-03-16T11:46:43Z
 
 [Term]
 id: WBls:0000710
-name: platyhelminth adult
-def: "The mature, fully developed form of a platyhelminth capable of sexual reproduction." [WB:jl]
-is_a: WBls:0000704 ! platyhelminth life stage
+name: Platyhelminthes adult
+def: "The mature, fully developed life stage of Platyhelminthes, usually capable of sexual reproduction." [WB:jl]
+synonym: "platyhelminth adult" EXACT []
+is_a: WBls:0000704 ! Platyhelminthes life stage
 created_by: jl16
 creation_date: 2016-03-16T11:51:21Z
+
+[Term]
+id: WBls:0000711
+name: Digenean life stage
+def: "Any developmental stage of a Digenean (fluke)." [WB:jl]
+comment: Digeneans include the Schistosomatidae (blood flukes).
+is_a: WBls:0000704 ! Platyhelminthes life stage
+created_by: jl16
+creation_date: 2016-03-17T12:11:31Z
+
+[Term]
+id: WBls:0000712
+name: Cestoda life stage
+def: "Any developmental stage of a Cestode (tapeworm)." [WB:jl]
+is_a: WBls:0000704 ! Platyhelminthes life stage
+created_by: jl16
+creation_date: 2016-03-17T12:18:32Z
+
+[Term]
+id: WBls:0000713
+name: oncosphere
+def: "A six-hooked larva, called the hexcanth, enclosed by one or two embryonic envelopes. This stage invades the first (or sole) intermediate host where it develops into a bladder larva, such as a hydatid cyst." [WB:jl]
+synonym: "hexcanth" RELATED []
+is_a: WBls:0000712 ! Cestoda life stage
+created_by: jl16
+creation_date: 2016-03-17T13:42:45Z
+
+[Term]
+id: WBls:0000714
+name: hydatid cyst
+def: "A larval stage of cestodes characterized by internal (and often external) chambers lined by germinal epithelium. The inner germinal layer of hydatid cysts is cellular and the protoscolex develops from those cells." [PMID:12462989, WB:jl]
+comment: Note that a hydatid cyst is a type of bladder larva, a larval form in which one or more scoleces develop in a fluid-filled cyst. Other types of bladder larva include cysticercus, coenurus and strobilocercus.
+synonym: "hydatid cyst stage" EXACT []
+synonym: "metacestode vesicle" EXACT []
+is_a: WBls:0000712 ! Cestoda life stage
+relationship: part_of WBls:0000716 ! metacestode
+created_by: jl16
+creation_date: 2016-03-17T14:27:42Z
+
+[Term]
+id: WBls:0000715
+name: protoscolex
+def: "An infective larval stage of cestodes which develops from the hydatid cyst. The stage begins when a clustering of cells emerge from the germinal layer of hydatid cysts. The buds elongate and the cells at their bases seem to diminish in number. Very early on a furrow appears in the elongated buds, delimiting anterior (scolex) and caudal (body) regions. Hooks are the first fully-differentiated structures formed at the apical region of the nascent scolex. A cone can later be seen at the center of the hooks, the body is expanded and a structured neck is evident between the scolex and the body. During protoscolex development this parasitic form remains attached to the germinative layer through a stalk. When fully differentiated, the stalk is cut off and the infective protoscolex is now free in the hydatid fluid. This stage ends when the protoscolex attaches, via the scolex, to the host intestinal tissue and begins to develop into a adult." [PMID:12462989, WB:jl]
+comment: Note that a hydatid cyst is a type of bladder larva, a larval form in which one or more scoleces develop in a fluid-filled cyst. Other types of bladder larva include cysticercus, coenurus and strobilocercus.
+synonym: "protoscolex stage" EXACT []
+is_a: WBls:0000712 ! Cestoda life stage
+relationship: part_of WBls:0000716 ! metacestode
+created_by: jl16
+creation_date: 2016-03-17T14:40:14Z
+
+[Term]
+id: WBls:0000716
+name: metacestode
+def: "The larval stages of a tapeworm, beginning with the metamorphosis of the oncosphere and ending with the first evidence of sexuality in the adult worm. Includes the procercoid and plerocercoid stages of pseudophyllid cestodes, and the cysticercus, cysticercoid, coenurus, and hydatid stages of cyclophyllidean cestodes." [ISBN:070202788X, WB:jl]
+synonym: "metacestode stage" EXACT []
+is_a: WBls:0000712 ! Cestoda life stage
+created_by: jl16
+creation_date: 2016-03-17T15:02:35Z
 
 [Term]
 id: WBls:0000793
