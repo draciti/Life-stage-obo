@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 18:03:2016 12:35
+date: 27:04:2016 13:12
 saved-by: jl16
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: worm_development
@@ -596,7 +596,7 @@ creation_date: 2012-05-30T09:31:38Z
 [Term]
 id: WBls:0000083
 name: Brugia adult
-def: "The stage that begins when a B. malayi individual is fully-developed and has reached maturity. Adult B. malayi (or at least adult females) can live for 10 years in a human host, and can outlive their rodent laboratory hosts; it is usual to state the chronological age of the nematodes in days or months post-infection, and occasionally post-patency (the production of first microfilariae)." [WB:dr, WB:mb]
+def: "The life-stage that begins when a B. malayi individual is fully-developed and has reached maturity. Adult B. malayi (or at least adult females) can live for 10 years in a human host, and can outlive their rodent laboratory hosts; it is usual to state the chronological age of the nematodes in days or months post-infection, and occasionally post-patency (the production of first microfilariae)." [WB:dr, WB:mb]
 synonym: "adult Bma" EXACT []
 is_a: WBls:0000104 ! nematode adult
 relationship: part_of WBls:0000093 ! Brugia postembryonic stage
@@ -808,8 +808,9 @@ creation_date: 2013-11-25T06:14:39Z
 [Term]
 id: WBls:0000104
 name: nematode adult
-def: "The stage that begins when an animal is fully-developed and has reached maturity." [WB:dr]
+def: "The nematode life-stage that begins when the organism is fully-developed and has reached maturity." [WB:dr]
 synonym: "adult nematode" EXACT []
+synonym: "L5" EXACT []
 is_a: WBls:0000103 ! postembryonic nematode
 relationship: starts_at_end_of WBls:0000105 ! nematode larval stage
 created_by: danielaraciti
@@ -828,7 +829,7 @@ creation_date: 2013-11-25T06:19:27Z
 [Term]
 id: WBls:0000106
 name: L1
-def: "The first stage larva." [WB:dr]
+def: "The first stage larva of nematodes." [WB:dr]
 synonym: "L1 larva nematode" EXACT []
 is_a: WBls:0000105 ! nematode larval stage
 relationship: starts_at_end_of WBls:0000110 ! sheathed microfilaria
@@ -838,7 +839,7 @@ creation_date: 2013-11-25T06:20:28Z
 [Term]
 id: WBls:0000107
 name: L2
-def: "The second stage larva." [WB:dr]
+def: "The second stage larva of nematodes." [WB:dr]
 synonym: "L2 larva nematode" EXACT []
 is_a: WBls:0000105 ! nematode larval stage
 relationship: starts_at_end_of WBls:0000106 ! L1
@@ -848,7 +849,7 @@ creation_date: 2013-11-25T06:20:54Z
 [Term]
 id: WBls:0000108
 name: L3
-def: "The third stage larva." [WB:dr]
+def: "The third stage larva of nematodes." [WB:dr]
 synonym: "L3 larva nematode" EXACT []
 is_a: WBls:0000105 ! nematode larval stage
 relationship: starts_at_end_of WBls:0000107 ! L2
@@ -858,7 +859,7 @@ creation_date: 2013-11-25T06:21:33Z
 [Term]
 id: WBls:0000109
 name: L4
-def: "The fourth stage larva." [WB:dr]
+def: "The fourth stage larva of nematodes." [WB:dr]
 synonym: "L4 larva nematode" EXACT []
 is_a: WBls:0000105 ! nematode larval stage
 relationship: starts_at_end_of WBls:0000108 ! L3
@@ -5862,7 +5863,7 @@ creation_date: 2014-11-25T09:23:44Z
 [Term]
 id: WBls:0000665
 name: Brugia microfilaria
-def: "Microfilaria is the stage which develops from the egg and precedes the L1 stage." [WB:dr, WB:mb]
+def: "An early stage in the life cycle of Brugia species, which develops from the egg and precedes the L1 stage." [WB:dr, WB:mb]
 synonym: "Brugia MF" EXACT []
 synonym: "microfilaria Bma" EXACT []
 is_a: WBls:0000664 ! microfilaria
@@ -6241,7 +6242,8 @@ creation_date: 2016-03-16T11:42:15Z
 [Term]
 id: WBls:0000708
 name: cercarium
-def: "An infectious form which infects by direct skin penetration. Cercariae emerge daily from the intermediate snail host; they are highly motile, alternating between vigorous upward movement and sinking; cercarium attaches to the human skin and secretes proteolytic enzymes helping it to enter into cutaneous capillary vessel; upon the penetration the cercarium sheds its tail and transforms into schistosomulum." [WB:jl]
+def: "An infectious life-cycle stage, which can infect by direct skin penetration (e.g. Schistosoma sp.) or ingestion (e.g. Fasciola sp.). Cercariae develop in and emerge from the intermediate invertebrate (snail) host. In Schistosoma sp., the cercarium attaches to the skin of the definitive host and secretes proteolytic enzymes helping it to enter into cutaneous capillary vessel; upon the penetration the cercarium sheds its tail and transforms into a schistosomulum. In Fasciola sp., cercariae encyst on vegetation as dormant metacercariae until ingestion by the definitive host." [PMID:25887684, WB:jl]
+synonym: "cercariae" EXACT []
 is_a: WBls:0000711 ! Digenean life stage
 created_by: jl16
 creation_date: 2016-03-16T11:44:51Z
@@ -6267,8 +6269,9 @@ creation_date: 2016-03-16T11:51:21Z
 [Term]
 id: WBls:0000711
 name: Digenean life stage
-def: "Any developmental stage of a Digenean (fluke)." [WB:jl]
+def: "A developmental stage of a Digenean (fluke)." [WB:jl]
 comment: Digeneans include the Schistosomatidae (blood flukes).
+synonym: "fluke life stage" EXACT []
 is_a: WBls:0000704 ! Platyhelminthes life stage
 created_by: jl16
 creation_date: 2016-03-17T12:11:31Z
@@ -6331,6 +6334,32 @@ is_a: WBls:0000712 ! Cestoda life stage
 relationship: part_of WBls:0000716 ! metacestode
 created_by: jl16
 creation_date: 2016-03-18T11:15:07Z
+
+[Term]
+id: WBls:0000718
+name: newly excysted juveniles
+def: "A Digenean (fluke) life stage that occurs in the definitive host. The stage begins when the metacercariae excyst in the intestine of the host, and continues as the NEJs migrate through the liver parenchyma where they increase in size to juvenile flukes and then to mature adults." [PMID:25887684, WB:jl]
+synonym: "NEJ" EXACT []
+is_a: WBls:0000711 ! Digenean life stage
+created_by: jl16
+creation_date: 2016-04-27T12:02:59Z
+
+[Term]
+id: WBls:0000719
+name: juvenile fluke
+def: "A Digenean (fluke) life stage that occurs in the definitive host. The stage begins when the newly excysted juveniles migrate through the liver parenchyma where they increase in size to become juvenile flukes. From here they migrate into the bile ducts, where they grow and develop into fully mature adults." [PMID:25887684, WB:jl]
+is_a: WBls:0000711 ! Digenean life stage
+created_by: jl16
+creation_date: 2016-04-27T12:56:49Z
+
+[Term]
+id: WBls:0000720
+name: metacercarium
+def: "A dormant Digenean (fluke) life stage which occurs after cercariae are released from the intermediate snail host and encyst on vegetation until they are ingested by the definitive host." [PMID:25887684, WB:jl]
+synonym: "metacercariae" EXACT []
+is_a: WBls:0000711 ! Digenean life stage
+created_by: jl16
+creation_date: 2016-04-27T13:01:06Z
 
 [Term]
 id: WBls:0000793
