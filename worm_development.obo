@@ -6340,6 +6340,7 @@ id: WBls:0000718
 name: newly excysted juveniles
 def: "A Digenean (fluke) life stage that occurs in the definitive host. The stage begins when the metacercariae excyst in the intestine of the host, and continues as the NEJs migrate through the liver parenchyma where they increase in size to juvenile flukes and then to mature adults." [PMID:25887684, WB:jl]
 synonym: "NEJ" EXACT []
+synonym: "newly emerged juveniles" EXACT []
 is_a: WBls:0000711 ! Digenean life stage
 created_by: jl16
 creation_date: 2016-04-27T12:02:59Z
