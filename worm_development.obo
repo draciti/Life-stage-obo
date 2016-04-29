@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 27:04:2016 17:17
+date: 29:04:2016 11:58
 saved-by: jl16
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: worm_development
@@ -6365,18 +6365,20 @@ creation_date: 2016-04-27T13:01:06Z
 [Term]
 id: WBls:0000721
 name: nematode adult intestinal stage
-def: "An adult life-stage of a soil-transmitted nematode such as Trichuris sp. that resides in the intestinal epitheium. The stage ends when the posterior of the male and female worms emerge free into the intestinal lumen at which point the worm enters the lumenal stage." [PMID:19079187, WB:jl]
+def: "OBSOLETE. An adult life-stage of a soil-transmitted nematode such as Trichuris sp. that resides in the intestinal epitheium. The stage ends when the posterior of the male and female worms emerge free into the intestinal lumen at which point the worm enters the lumenal stage." [PMID:19079187, WB:jl]
+comment: This term was made obsolete because this is an anotomical part and not a life-stage.
 synonym: "nematode adult intestinal phase" EXACT []
-is_a: WBls:0000104 ! nematode adult
+is_obsolete: true
 created_by: jl16
 creation_date: 2016-04-27T17:03:22Z
 
 [Term]
 id: WBls:0000722
 name: nematode adult lumenal stage
-def: "An adult life-stage of a soil-transmitted nematode such as Trichuris sp. in which the anterior portion (whip-like end) is threaded into the tissue mucosa and the posterior of the male and female worms emerges free into the intestinal lumen to facilitate feeding, mating, and subsequent egg deposition." [PMID:19079187, WB:jl]
+def: "OBSOLETE. An adult life-stage of a soil-transmitted nematode such as Trichuris sp. in which the anterior portion (whip-like end) is threaded into the tissue mucosa and the posterior of the male and female worms emerges free into the intestinal lumen to facilitate feeding, mating, and subsequent egg deposition." [PMID:19079187, WB:jl]
+comment: This term was made obsolete because this is an anotomical part and not a life-stage.
 synonym: "nematode adult lumenal phase" EXACT []
-is_a: WBls:0000104 ! nematode adult
+is_obsolete: true
 created_by: jl16
 creation_date: 2016-04-27T17:13:57Z
 
