@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 29:04:2016 11:58
+date: 22:06:2016 15:58
 saved-by: jl16
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: worm_development
@@ -6251,7 +6251,7 @@ creation_date: 2016-03-16T11:44:51Z
 [Term]
 id: WBls:0000709
 name: schistosomulum
-def: "A tailless cercarium. After penetration and spending a few days in the skin, schistosomula migrate to the lungs and enter the systemic circulation and are carried to the mesenteric vein of the host where they mature into adult schistosomes. Female schistosomes cannot maturate without a mature male. The male schistosome holds female between its gynecophoral canal and sexual reproduction of the parasite can begin." [WB:jl]
+def: "A tailless cercarium of Schistosoma sp, which resides in the definitive host. After penetration and spending a few days in the skin, schistosomula migrate to the lungs and enter the systemic circulation and are carried to the mesenteric vein of the host where they mature into adult schistosomes." [WB:jl]
 synonym: "somule" EXACT []
 is_a: WBls:0000711 ! Digenean life stage
 created_by: jl16
@@ -6381,6 +6381,24 @@ synonym: "nematode adult lumenal phase" EXACT []
 is_obsolete: true
 created_by: jl16
 creation_date: 2016-04-27T17:13:57Z
+
+[Term]
+id: WBls:0000724
+name: 3 hr schistosomulum
+def: "A tailless cercarium of Schistosoma sp, 3 hours post-infection by skin penetration of the definitive host." [WB:jl]
+synonym: "3 hr somule" EXACT []
+is_a: WBls:0000709 ! schistosomulum
+created_by: jl16
+creation_date: 2016-06-22T15:54:14Z
+
+[Term]
+id: WBls:0000725
+name: 24 hr schistosomulum
+def: "A tailless cercarium of Schistosoma sp, 24 hours post-infection by skin penetration of the definitive host." [WB:jl]
+synonym: "24 hr somule" EXACT []
+is_a: WBls:0000709 ! schistosomulum
+created_by: jl16
+creation_date: 2016-06-22T15:56:23Z
 
 [Term]
 id: WBls:0000793
