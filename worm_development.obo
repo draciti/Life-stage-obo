@@ -673,6 +673,7 @@ id: WBls:0000083
 name: Brugia adult
 def: "The life-stage that begins when a B. malayi individual is fully-developed and has reached maturity. Adult B. malayi (or at least adult females) can live for 10 years in a human host, and can outlive their rodent laboratory hosts; it is usual to state the chronological age of the nematodes in days or months post-infection, and occasionally post-patency (the production of first microfilariae)." [WB:dr, WB:mb]
 synonym: "adult Bma" EXACT []
+synonym: "adult" BROAD []
 is_a: WBls:0000104 ! nematode adult
 relationship: part_of WBls:0000093 ! Brugia postembryonic stage
 relationship: starts_at_end_of WBls:0000100 ! Brugia young adult
@@ -768,6 +769,7 @@ id: WBls:0000092
 name: Brugia embryo
 def: "The whole period of embryogenesis, from the formation of an egg till its hatch." [WB:dr]
 synonym: "embryo Bma" EXACT []
+synonym: "embryo" BROAD []
 is_a: WBls:0000091 ! Brugia life stage
 is_a: WBls:0000102 ! nematode embryo
 created_by: danielaraciti
@@ -6896,6 +6898,7 @@ id: WBls:0000705
 name: Platyhelminthes egg
 def: "The egg stage of the Platyhelminthes life cycle. The stage ends upon hatching." [WB:jl]
 synonym: "platyhelminth egg" EXACT []
+synonym: "egg" BROAD []
 is_a: WBls:0000704 ! Platyhelminthes life stage
 created_by: jl16
 creation_date: 2016-03-16T11:17:04Z
@@ -6939,6 +6942,7 @@ id: WBls:0000710
 name: Platyhelminthes adult
 def: "The mature, fully developed life stage of Platyhelminthes, usually capable of sexual reproduction." [WB:jl]
 synonym: "platyhelminth adult" EXACT []
+synonym: "adult" BROAD []
 is_a: WBls:0000704 ! Platyhelminthes life stage
 created_by: jl16
 creation_date: 2016-03-16T11:51:21Z
