@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 16:08:2016 09:06
+date: 11:10:2016 10:35
 saved-by: danielaraciti
 auto-generated-by: OBO-Edit 2.2-rc1
 default-namespace: worm_development
@@ -6598,7 +6598,7 @@ name: 15-days post-L4 adult hermaphrodite Ce
 def: "At 20 Centigrade: 15-16 days after L4-adult molt. 18-19 days after first cleavage." [WB:dr]
 synonym: "15-days post-L4 adult hermaphrodite" BROAD []
 relationship: part_of WBls:0000057 ! adult hermaphrodite Ce
-relationship: preceded_by WBls:0000074 ! 11-15 days post-L4 adult hermaphrodite
+relationship: preceded_by WBls:0000800 ! 14 days post-L4 adult hermaphrodite
 
 [Term]
 id: WBls:0000676
@@ -7124,6 +7124,46 @@ is_a: WBls:0000677 ! Strongyloides free-living stage
 is_a: WBls:0000680 ! Strongyloides infective L3
 created_by: jl16
 creation_date: 2015-11-25T11:57:47Z
+
+[Term]
+id: WBls:0000797
+name: 11-days post-L4 adult hermaphrodite Ce
+def: "At 20 Centigrade: 11-12 days after L4-adult molt. 14-15 days after first cleavage." [WB:dr]
+synonym: "11-days post-L4 adult hermaphrodite" BROAD []
+relationship: part_of WBls:0000057 ! adult hermaphrodite Ce
+relationship: starts_at_end_of WBls:0000674 ! 10-days post-L4 adult hermaphrodite Ce
+created_by: danielaraciti
+creation_date: 2016-10-19T10:13:23Z
+
+[Term]
+id: WBls:0000798
+name: 12-days post-L4 adult hermaphrodite Ce
+def: "At 20 Centigrade: 12-13 days after L4-adult molt. 15-16 days after first cleavage." [WB:dr]
+synonym: "12-days post-L4 adult hermaphrodite" BROAD []
+relationship: part_of WBls:0000057 ! adult hermaphrodite Ce
+relationship: starts_at_end_of WBls:0000797 ! 11-days post-L4 adult hermaphrodite Ce
+created_by: danielaraciti
+creation_date: 2016-10-19T10:13:47Z
+
+[Term]
+id: WBls:0000799
+name: 13-days post-L4 adult hermaphrodite Ce
+def: "At 20 Centigrade: 13-14 days after L4-adult molt. 16-17 days after first cleavage." [WB:dr]
+synonym: "13-days post-L4 adult hermaphrodite" BROAD []
+relationship: part_of WBls:0000057 ! adult hermaphrodite Ce
+relationship: starts_at_end_of WBls:0000798 ! 12-days post-L4 adult hermaphrodite Ce
+created_by: danielaraciti
+creation_date: 2016-10-19T10:14:11Z
+
+[Term]
+id: WBls:0000800
+name: 14-days post-L4 adult hermaphrodite Ce
+def: "At 20 Centigrade: 14-15 days after L4-adult molt. 17-18 days after first cleavage." [WB:dr]
+synonym: "14-days post-L4 adult hermaphrodite" BROAD []
+relationship: part_of WBls:0000057 ! adult hermaphrodite Ce
+relationship: starts_at_end_of WBls:0000799 ! 13-days post-L4 adult hermaphrodite Ce
+created_by: danielaraciti
+creation_date: 2016-10-19T10:14:40Z
 
 [Typedef]
 id: part_of
