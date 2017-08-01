@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 19:06:2017 09:02
-saved-by: danielaraciti
-auto-generated-by: OBO-Edit 2.2-rc1
+date: 28:07:2017 14:36
+saved-by: fr7
+auto-generated-by: OBO-Edit 2.3.1
 default-namespace: worm_development
 remark: Version: 1.04
 remark: Editors: Wen J. Chen & Daniela Raciti, WormBase, Caltech. Jane Lomax, Wellcome Trust Sanger Institute.
@@ -7121,6 +7121,14 @@ created_by: fr7
 creation_date: 2017-06-09T10:28:52Z
 
 [Term]
+id: WBls:0000729
+name: Strongyloides free living adult female
+def: "Adult female Strongyloides living entirely outside of a host or vector organism." [WB:fr]
+is_a: WBls:0000682 ! Strongyloides free-living adult
+created_by: fr7
+creation_date: 2017-07-28T14:28:29Z
+
+[Term]
 id: WBls:0000730
 name: Onchocerca L1 larva
 def: "L1 larvae that develop from the microfilariae in the arthropod vector." [WB:fr]
@@ -7224,6 +7232,14 @@ def: "Any developmental stage of a nematode of the Onchocerca genus." [WB:fr]
 is_a: WBls:0000101 ! Nematode life stage
 created_by: fr7
 creation_date: 2017-06-09T10:18:45Z
+
+[Term]
+id: WBls:0000742
+name: Strongyloides free living adult male
+def: "Adult male Strongyloides living entirely outside of a host or vector organism." [WB:fr]
+is_a: WBls:0000682 ! Strongyloides free-living adult
+created_by: fr7
+creation_date: 2017-07-28T14:34:19Z
 
 [Term]
 id: WBls:0000793
