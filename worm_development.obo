@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 28:07:2017 14:36
-saved-by: fr7
-auto-generated-by: OBO-Edit 2.3.1
+date: 15:11:2017 12:24
+saved-by: danielaraciti
+auto-generated-by: OBO-Edit 2.2-rc1
 default-namespace: worm_development
 remark: Version: 1.04
 remark: Editors: Wen J. Chen & Daniela Raciti, WormBase, Caltech. Jane Lomax, Wellcome Trust Sanger Institute.
@@ -7319,6 +7319,24 @@ relationship: part_of WBls:0000057 ! adult hermaphrodite Ce
 relationship: starts_at_end_of WBls:0000799 ! 13-days post-L4 adult hermaphrodite Ce
 created_by: danielaraciti
 creation_date: 2016-10-19T10:14:40Z
+
+[Term]
+id: WBls:0000801
+name: newly hatched L1 larval stage Ce
+def: "The stage that begins right after hatching and before development proceeds after feeding. A newly hatched L1 larva contains 558 cells." [PMC:4492366, WA:Wormatlas, WB:dr]
+relationship: part_of WBls:0000023 ! larva Ce
+relationship: preceded_by WBls:0000021 ! fully-elongated embryo Ce
+created_by: danielaraciti
+creation_date: 2017-11-14T10:14:40Z
+
+[Term]
+id: WBls:0000802
+name: L1 arrest Ce
+def: "The stage in which first stage larvae (L1) that hatch in the absence of food enter a state of developmental arrest." [PMC:3697962, WB:dr]
+synonym: "L1 diapause" EXACT []
+relationship: part_of WBls:0000801 ! newly hatched L1 larval stage Ce
+created_by: danielaraciti
+creation_date: 2017-11-14T10:15:40Z
 
 [Typedef]
 id: part_of
